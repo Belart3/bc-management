@@ -10,9 +10,9 @@ const inter = Inter({
   subsets: ["latin"],
 });
 
-type Props = {}
+//type Props = {}
 
-const Navbar = (props: Props) => {
+const Navbar = () => {
   return (
     <nav className='px-4 py-3 md:px-5 md:py-4 flex flex-row justify-between items-center rounded-xl md:rounded-3xl bg-[#ffffffd0] border border-[#E6E6E6] shadow-lg w-[90%] fixed left-[50%] -translate-x-[50%] lg:max-w-[1130px] top-5 md:top-10 z-50 backdrop-blur-[15px]'>
         <Link href="/">

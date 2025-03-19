@@ -30,9 +30,14 @@ export default function Home() {
             Watch Video
           </p>
         </div>
-        <div className="flex bg-[#00000010] rounded-xl md:rounded-3xl border-[0.5px] border-[#666666] h-[300px] md:h-[400px] lg:h-[500px] p-2 md:p-6 relative  -bottom-[100px] lg:-bottom-[133px] w-[95%] max-w-[650px] lg:w-[1130px] lg:max-w-[1130px] left-[50%] -translate-x-[50%] backdrop-blur-[15px]  md:backdrop-blur-[30px]">
+        <div className="flex bg-[#00000010] rounded-xl md:rounded-3xl border-[0.5px] border-[#666666] h-[300px] md:h-[400px] lg:h-[500px] p-2 md:p-6 relative  -bottom-[100px] lg:-bottom-[133px] w-[95%] max-w-[650px] lg:w-[1130px] lg:max-w-[1130px] left-[50%] -translate-x-[50%] backdrop-blur-[15px]  md:backdrop-blur-[30px] ">
           <div className="h-full w-full bg-[#00000010] rounded-lg md:rounded-2xl border-[0.5px] border-[#666666] p-1 md:p-2 backdrop-blur-[10px] md:backdrop-blur-[20px]">
-            <div className="h-full w-full bg-black rounded-sm md:rounded-lg"></div>
+            <div className="h-full w-full bg-black rounded-sm md:rounded-lg">
+              <video preload="none" className="h-full w-full rounded-sm md:rounded-lg" >
+                <source src="/videos/Defi crypto tax services and Defi blockchain tax management.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+            </div>
           </div>
         </div>
       </header>

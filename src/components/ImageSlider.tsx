@@ -1,8 +1,8 @@
 import React from 'react'
 
-type Props = {}
+//type Props = {}
 
-const ImageSlider = (props: Props) => {
+const ImageSlider = () => {
   return (
     <div>ImageSlider</div>
   )
