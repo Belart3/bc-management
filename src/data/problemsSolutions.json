@@ -1,0 +1,27 @@
+[
+    {
+        "id": 1,
+        "title": "Overpaying Taxes",
+        "paragpraph": "Missing key deductions from trades, staking, and air-drops means you're giving away money unnecessarily.",
+        "category": "problem"
+    },
+    {
+        "id": 2,
+        "title": "Disorganized Records",
+        "paragpraph": "Without proper tracking, staying audit-ready or calculating profits is almost impossible.",
+        "category": "problem"
+    },
+    {
+        "id": 3,
+        "title": "Complex Wallets",
+        "paragpraph": "Juggling multiple wallets and DeFi platforms makes it difficult to get a clear picture of your finances.",
+        "category": "problem"
+    },
+    {
+        "id": 4,
+        "title": "Unclear Cost Basis",
+        "paragpraph": "Most tools fail to calculate accurate cost basis, leaving you vulnerable to overpaying taxes.",
+        "category": "problem"
+    }
+    
+]

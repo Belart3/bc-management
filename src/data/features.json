@@ -1,0 +1,20 @@
+[
+    {
+        "id": 1,
+        "title": "Manual Transaction Extraction",
+        "paragraph": "Unlike automated tools, we manually review and reconcile your blockchain transactions to ensure no trade, fee, or staking reward is missed.",
+        "image": "/images/feature-1.png"
+    },
+    {
+        "id": 2,
+        "title": "Audit-Ready Documentation",
+        "paragraph": "We provide comprehensive audit trails and detailed reports that stand up to scrutiny and simplify your tax filing process.",
+        "image": "/images/feature-2.png"
+    },
+    {
+        "id": 3,
+        "title": "Cost Basis Accuracy",
+        "paragraph": "Our calculations include both actual and initial cost basis for every token, ensuring your records are precise and compliant.",
+        "image": "/images/feature-3.png"
+    }
+]
