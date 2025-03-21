@@ -275,6 +275,23 @@ export default function Home() {
             </div>
           </div>
         </SectionWrapper>
+        <div className="flex flex-col lg:flex-row rounded-lg md:rounded-2xl border border-[#333333]  bg-black mb-[64px] gap-10 max-w-[1360px] mx-auto 
+        bg-[url('/images/consultation.svg'),_url('/header-orange-tint.svg'),_url('/images/grid.svg')] 
+        h-150 sm:h-200 md:h-250 lg:h-150 
+        bg-no-repeat bg-[length:contain,auto,cover] bg-[position:bottom,top_center,center] 
+        md:bg-no-repeat md:bg-[length:contain,auto,cover] md:bg-[position:bottom_center,center_-20%,center] 
+        lg:bg-[length:auto,auto,cover] lg:bg-[position:bottom_right,-70%_center,center]">
+          <div className="flex flex-col gap-6 px-5 md:px-18 lg:w-[60%] mt-20 lg:my-21">
+            <h2 className={`${inter.className} text-[44px]/[44px] md:text-[73px]/[73px] text-white text-start font-medium`}>
+              Still Got Questions? <br />
+              Book a Free 15 minutes Consultation.
+            </h2>
+            <button className={`px-6 py-4 bg-[#F4844C] rounded-2xl flex flex-row gap-2 items-center text-white text-[16px]/[16px] capitalize font-medium ${inter.className} w-full sm:w-fit max-w-[300px]`}>
+              <Image src="./images/phone.svg" height={24} width={24} alt="" />
+              book your free consultation
+            </button>
+          </div>
+        </div>
       </main>
     </div>
   );
