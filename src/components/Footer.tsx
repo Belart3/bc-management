@@ -7,9 +7,9 @@ const inter = Inter({
   subsets: ["latin"],
 });
 
-type Props = {}
+//type Props = {}
 
-const Footer = (props: Props) => {
+const Footer = () => {
   return (
     <footer className='bg-black pt-16 pb-6 px-5 flex flex-col gap-y-16'>
         <div className='flex flex-col gap-y-16 md:flex-row md:justify-between'>
