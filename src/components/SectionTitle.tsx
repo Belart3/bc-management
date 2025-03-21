@@ -19,7 +19,7 @@ const SectionTitle = (props: Props) => {
         </h2>
         {
             props.paragraph && 
-            <p className={`text-[#333333] ${inter.className} font-normal text-[14px]/[21px] md:text-[18px]/[27px] text-center px-36`}>
+            <p className={`text-[#333333] ${inter.className} font-normal text-[14px]/[21px] md:text-[18px]/[27px] text-center px-0 md:px-10 lg:px-36`}>
                 {props.paragraph}
             </p>
         }

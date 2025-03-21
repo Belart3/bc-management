@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -21,10 +22,13 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${inter.variable} antialiased mx-5 lg:mx-10 mt-[10px] md:mt-5 bg-white relative`}
+        className=" mt-[10px] md:mt-5"
       >
-        <Navbar />
-        {children}
+        <div className={`${inter.variable} antialiased mx-5 lg:mx-10 bg-white relative`}>
+          <Navbar />
+          {children}
+        </div>
+        <Footer />
       </body>
     </html>
   );

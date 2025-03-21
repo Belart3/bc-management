@@ -30,8 +30,16 @@ export default function Home() {
   const [filter, setfilter] = useState('your problem');
   return (
     <div>
-      <header className="bg-[#e6e6e620] h-fit w-full rounded-lg pt-[122px] md:pt-[172px] bg-[url(/header-orange-tint.svg)] bg-bottom bg-no-repeat bg-contain  relative backdrop-blur-[150px] mb-[200px]">
-        <div className="flex flex-col gap-6  mb-[50px] mx-3 md:mx-0 max-w-[1130px] lg:mx-auto">
+      <header className="bg-[#e6e6e620] h-fit w-full rounded-lg pt-[122px] md:pt-[172px] 
+      bg-[url(/header-orange-tint-mobile.svg),_url(/header-grid.svg)] 
+      md:bg-[url(/header-orange-tint-tablet.svg),_url(/header-grid.svg)] 
+      lg:bg-[url(/header-orange-tint-desktop.svg),_url(/header-grid.svg)] 
+
+      bg-[position:50%_100px,center] bg-[length:cover,cover] 
+      md:bg-[position:50%_500px,center] bg-no-repeat md:bg-[length:cover,cover] 
+      lg:bg-[position:50%_-90%,center] lg:bg-[length:auto,cover] 
+      backdrop-blur-[150px] mb-[200px] max-w-[1360px] mx-auto">
+        <div className="flex flex-col gap-6 mb-5 md:mb-0 lg:mb-[50px] mx-3 md:mx-0 max-w-[1130px] lg:mx-auto">
           <div className="flex flex-col gap-4 ">
             <h1 className={`${inter.className} text-[44px]/[44px] md:text-[73px]/[73px] font-medium text-black text-center capitalize md:px-10`}>
               Simplify Your Crypto Taxes and Maximize Your Profits.
@@ -41,18 +49,18 @@ export default function Home() {
             </p>
           </div>
           <div className="flex items-center justify-center">
-            <button className={`capitalize text-white text-[16px]/[16px] ${inter.className} rounded-2xl bg-[#F4844C] px-6 py-4 w-full sm:w-fit`}>
+            <button className={`capitalize text-white text-[16px]/[16px] ${inter.className} rounded-2xl bg-[#F4844C] px-6 py-4 w-full sm:w-fit max-w-[300px]`}>
               get started
             </button>
           </div>
         </div>
-        <div className="flex  flex-row items-center justify-center space-x-2">
+        <div className="flex  flex-row items-center justify-center space-x-2 w-fit relative left-[50%] md:left-[75%] lg:left-[65%] translate-x-[-50%] ">
           <Image src="/orange-arrow.svg" height={12} width={30} alt="" className="md:w-[57px]  md:h-[25px]" />
           <p className={`text-[#DD4A00] text-[8px]/[8px] md:text-[16px]/[16px] font-bold ${inter.className} rotate-12`}>
             Watch Video
           </p>
         </div>
-        <div className="flex bg-[#00000010] rounded-xl md:rounded-3xl border-[0.5px] border-[#666666] h-[300px] md:h-[400px] lg:h-[500px] p-2 md:p-6 relative  -bottom-[100px] lg:-bottom-[133px] w-[95%] max-w-[650px]  lg:max-w-[1130px] left-[50%] -translate-x-[50%] backdrop-blur-[15px]  md:backdrop-blur-[30px] ">
+        <div className="flex bg-[#00000010] rounded-xl md:rounded-3xl border-[0.5px] border-[#666666] h-[300px] md:h-[400px] lg:h-[500px] p-2 md:p-6 relative -bottom-[12px]  md:-bottom-[43px] lg:-bottom-[118px] w-[95%] max-w-[650px]  lg:max-w-[1130px] left-[50%] -translate-x-[50%] backdrop-blur-[15px]  md:backdrop-blur-[30px] ">
           <div className="h-full w-full bg-[#00000010] rounded-lg md:rounded-2xl border-[0.5px] border-[#666666] p-1 md:p-2 backdrop-blur-[10px] md:backdrop-blur-[20px]">
             <div className="h-full w-full bg-black rounded-sm md:rounded-lg">
               <video controls preload="none" className="h-full w-full rounded-sm md:rounded-lg" >
@@ -276,7 +284,7 @@ export default function Home() {
           </div>
         </SectionWrapper>
         <div className="flex flex-col lg:flex-row rounded-lg md:rounded-2xl border border-[#333333]  bg-black mb-[64px] gap-10 max-w-[1360px] mx-auto 
-        bg-[url('/images/consultation.svg'),_url('/header-orange-tint.svg'),_url('/images/grid.svg')] 
+        bg-[url('/images/consultation.svg'),_url('/orange-tint.svg'),_url('/images/grid.svg')] 
         h-150 sm:h-200 md:h-250 lg:h-150 
         bg-no-repeat bg-[length:contain,auto,cover] bg-[position:bottom,top_center,center] 
         md:bg-no-repeat md:bg-[length:contain,auto,cover] md:bg-[position:bottom_center,center_-20%,center] 
