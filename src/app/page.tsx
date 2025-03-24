@@ -8,6 +8,7 @@ import { useState } from "react";
 import problemSolutions from "@/data/problemsSolutions.json"
 import testimonials from "@/data/testimonials.json"
 import features from "@/data/features.json"
+import Script from "next/script";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -195,7 +196,7 @@ export default function Home() {
                   title="New BCM Form"
                       >
                 </iframe>
-                <script src="https://app.bcmanagement.us/js/form_embed.js"></script>
+                <Script src="https://app.bcmanagement.us/js/form_embed.js"></Script>
               </div>
             </div>
         </div>
