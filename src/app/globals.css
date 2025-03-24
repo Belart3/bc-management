@@ -1,2 +1,24 @@
 @import "tailwindcss";
 
+@layer utilities {
+    @keyframes bounceTwist {
+      0%, 100% {
+        transform: translateY(0) rotate(0);
+      }
+      50% {
+        transform: translateY(-10px) rotate(10deg);
+      }
+    }
+    @keyframes rotate {
+        0% { transform: rotate(0deg) scale(10) }
+        100% { transform: rotate(360deg) scale(10) }
+    }
+
+    .animate-rotate {
+        animation: rotate 8s linear infinite;
+      }
+  
+    .animate-bounce-twist {
+      animation: bounceTwist 1s infinite ease-in-out;
+    }
+  }

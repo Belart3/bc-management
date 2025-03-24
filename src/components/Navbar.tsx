@@ -18,7 +18,7 @@ const Navbar = () => {
         <Link href="/">
             <Image src="./logo.svg" height={40} width={120} alt='BlockChain Management' className='h-8 w-[94px]' />
         </Link>
-        <ul className='hidden flex-row items-center gap-x-6 lg:flex'>
+        <ul className='hidden flex-row items-center gap-x-2 xl:gap-x-6 lg:flex'>
             <Link href="">
                 <li className={`capitalize text-[16px]/[16px] font-normal text-black ${inter.className}`}>
                     your problem
@@ -45,7 +45,7 @@ const Navbar = () => {
                 </li>
             </Link>
         </ul>
-        <ul className='hidden flex-row items-center gap-x-6 lg:flex'>
+        <ul className='hidden flex-row items-center gap-x-2 xl:gap-x-6 lg:flex'>
             <Link href="">
                 <li className={`capitalize text-[16px]/[16px] font-medium text-black ${inter.className}`}>
                     become an affiliate

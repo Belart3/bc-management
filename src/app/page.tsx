@@ -28,16 +28,22 @@ export default function Home() {
     }
   ]
   const [filter, setfilter] = useState('your problem');
+  const [selectedCategory, setSelectedCategory] = useState("your problem")
+  
+  const filteredProblems = (category: string) => {
+      return problemSolutions.filter(issue => issue.category == category)
+  }
+  const issues = filteredProblems(selectedCategory)
   return (
     <div>
-      <header className="bg-[#e6e6e620] h-fit w-full rounded-lg pt-[122px] md:pt-[172px] 
+      <header className="bg-[#e6e6e620] h-fit md:h-[1200px] lg:h-[1150px] w-full rounded-lg pt-[122px] md:pt-[172px] 
       bg-[url(/header-orange-tint-mobile.svg),_url(/header-grid.svg)] 
       md:bg-[url(/header-orange-tint-tablet.svg),_url(/header-grid.svg)] 
       lg:bg-[url(/header-orange-tint-desktop.svg),_url(/header-grid.svg)] 
 
       bg-[position:50%_100px,center] bg-[length:cover,cover] 
       md:bg-[position:50%_500px,center] bg-no-repeat md:bg-[length:cover,cover] 
-      lg:bg-[position:50%_-90%,center] lg:bg-[length:auto,cover] 
+      lg:bg-[position:50%_-120%,center] lg:bg-[length:auto,cover] 
       backdrop-blur-[150px] mb-[200px] max-w-[1360px] mx-auto">
         <div className="flex flex-col gap-6 mb-5 md:mb-0 lg:mb-[50px] mx-3 md:mx-0 max-w-[1130px] lg:mx-auto">
           <div className="flex flex-col gap-4 ">
@@ -60,13 +66,20 @@ export default function Home() {
             Watch Video
           </p>
         </div>
-        <div className="flex bg-[#00000010] rounded-xl md:rounded-3xl border-[0.5px] border-[#666666] h-[300px] md:h-[400px] lg:h-[500px] p-2 md:p-6 relative -bottom-[12px]  md:-bottom-[43px] lg:-bottom-[118px] w-[95%] max-w-[650px]  lg:max-w-[1130px] left-[50%] -translate-x-[50%] backdrop-blur-[15px]  md:backdrop-blur-[30px] ">
-          <div className="h-full w-full bg-[#00000010] rounded-lg md:rounded-2xl border-[0.5px] border-[#666666] p-1 md:p-2 backdrop-blur-[10px] md:backdrop-blur-[20px]">
-            <div className="h-full w-full bg-black rounded-sm md:rounded-lg">
-              <video controls preload="none" className="h-full w-full rounded-sm md:rounded-lg" >
-                <source src="/videos/Defi crypto tax services and Defi blockchain tax management.mp4" type="video/mp4" />
-                Your browser does not support the video tag.
-              </video>
+        <div className="p-2 md:p-6 h-75 md:h-150 rounded-xl md:rounded-3xl bg-[#00000010] border-[0.5px]  md:border border-[#999999] mt-3 w-[calc(100%-16px)] md:w-[calc(100%-40px)] lg:w-[calc(100%-230px)] mx-auto relative -bottom-[20px] md:-bottom-[20px] lg:-bottom-[30px] backdrop-blur-[15px] md:backdrop-blur-[30px] shadow-2xl">
+          <div className="w-[calc(100%-1px)] h-[calc(100%-1px)] relative rounded-xl overflow-hidden flex items-center justify-center">
+
+            <div className="animate-rotate absolute inset-0 h-full w-full rounded-full bg-[conic-gradient(#DD4A00_0deg,transparent_30deg)]"></div>
+
+            <div className="h-[calc(100%-2px)] w-[calc(100%-2px)] backdrop-blur-[10px] rounded-[10px] bg-gray-100">
+              <div className="h-full w-full backdrop-blur-[10px] rounded-[10px] bg-[#00000080] mx-auto my-auto p-1 md:p-2 border border-[#F4844C40]">
+                <div className="bg-black h-full w-full rounded-[6px]">
+                  <video controls preload="none" className="h-full w-full rounded-sm md:rounded-lg" >
+                    <source src="/videos/Defi crypto tax services and Defi blockchain tax management.mp4" type="video/mp4" />
+                    Your browser does not support the video tag.
+                  </video>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -83,6 +96,7 @@ export default function Home() {
               <button className={`rounded-2xl py-4 px-6 flex items-center justify-centertext-black ${inter.className} text-[16px]/[16px] font-medium capitalize cursor-pointer ${ filter == category.title ? ' bg-white border border-[#E6E6E6] shadow-sm' : 'bg-transparent shadow-none border-none' }`} onClick={
                 () => {
                   setfilter(category.title)
+                  setSelectedCategory(category.title)
                 }
               } key={category.id}>
                 {category.title}
@@ -91,8 +105,8 @@ export default function Home() {
           </div>
           <div className="flex flex-col gap-4 max-w-sm mx-auto sm:grid sm:grid-rows-2 sm:grid-cols-2 sm:max-w-3xl sm:mx-auto lg:flex lg:flex-row lg:gap-4 lg:max-w-[1130px]">
             {
-              problemSolutions.map((issue) => (
-                <div className="flex flex-col items-center sm:items-start justify-center bg-[#E6E6E666] rounded-lg p-5 sm:p-10 gap-6 w-full" key={issue.id} >
+              issues.map((issue) => (
+                <div className="flex flex-col items-center sm:items-start justify-start bg-[#E6E6E666] rounded-lg p-5 sm:p-10 gap-6 w-full" key={issue.id} >
                   <h3 className={`${inter.className} text-[18px]/[18px] sm:text-[20px]/[20px] font-medium text-center sm:text-start capitalize text-black`}>
                     {issue.title}
                   </h3>
