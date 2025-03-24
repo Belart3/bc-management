@@ -44,7 +44,7 @@ export default function Home() {
       bg-[position:50%_100px,center] bg-[length:cover,cover] 
       md:bg-[position:50%_500px,center] bg-no-repeat md:bg-[length:cover,cover] 
       lg:bg-[position:50%_-120%,center] lg:bg-[length:auto,cover] 
-      backdrop-blur-[150px] mb-[200px] max-w-[1360px] mx-auto">
+      backdrop-blur-[150px] mb-[200px]">
         <div className="flex flex-col gap-6 mb-5 md:mb-0 lg:mb-[50px] mx-3 md:mx-0 max-w-[1130px] lg:mx-auto">
           <div className="flex flex-col gap-4 ">
             <h1 className={`${inter.className} text-[44px]/[44px] md:text-[73px]/[73px] font-medium text-black text-center capitalize md:px-10`}>
@@ -66,7 +66,7 @@ export default function Home() {
             Watch Video
           </p>
         </div>
-        <div className="p-2 md:p-6 h-75 md:h-150 rounded-xl md:rounded-3xl bg-[#00000010] border-[0.5px]  md:border border-[#999999] mt-3 w-[calc(100%-16px)] md:w-[calc(100%-40px)] lg:w-[calc(100%-230px)] mx-auto relative -bottom-[20px] md:-bottom-[20px] lg:-bottom-[30px] backdrop-blur-[15px] md:backdrop-blur-[30px] shadow-2xl">
+        <div className="p-2 md:p-6 h-75 md:h-150 rounded-xl md:rounded-3xl bg-[#00000010] border-[0.5px]  md:border border-[#999999] mt-3 w-[calc(100%-16px)] md:w-[calc(100%-40px)] lg:w-[calc(100%-230px)] mx-auto max-w-[1200px] relative -bottom-[20px] md:-bottom-[20px] lg:-bottom-[30px] backdrop-blur-[15px] md:backdrop-blur-[30px] shadow-2xl">
           <div className="w-[calc(100%-1px)] h-[calc(100%-1px)] relative rounded-xl overflow-hidden flex items-center justify-center">
 
             <div className="animate-rotate absolute inset-0 h-full w-full rounded-full bg-[conic-gradient(#DD4A00_0deg,transparent_30deg)]"></div>
@@ -118,27 +118,29 @@ export default function Home() {
             }
           </div>
         </SectionWrapper>
-        <div className="py-11 px-5 md:px-10 md:py-12 lg:py-19 lg:px-[115px] flex flex-col gap-12 md:gap-16 items-start md:items-center bg-[url(/images/testimonial-bg-mobile.svg)] md:bg-[url(/images/testimonial-bg-tablet.svg)] lg:bg-[url(/images/testimonial-bg-desktop.svg)] bg-cover bg-no-repeat bg-center rounded-lg md:rounded-2xl mb-[104px] md:mb-[168px] max-w-[1360px] mx-auto">
-          <h2 className={`${inter.className} text-[32px]/[32px] md:text-[53px]/[53px] font-medium text-start md:text-center text-white`}>
-            Accurate taxes. <br className="md:hidden" />
-            Stress-free crypto.
-          </h2>
-          <div className="flex flex-col gap-4 md:gap-8 lg:grid lg:grid-cols-2 lg:grid-rows-1 lg:max-w-[1130px]">
-          {
-            testimonials.map((testimony) => (
-              <div className="p-5 md:p-10 gap-6 md:gap-10 flex flex-col items-start justify-between rounded-lg bg-[#333333] bg-[url(/images/quote.svg)] bg-[45%_120%] md:bg-[80%_130%] lg:bg-[80%_100%] bg-no-repeat bg-[length:200px_100px]" key={testimony.id}>
-                <h3 className={`text-white text-[18px]/[27px] md:text-[20px]/[30px] font-medium text-start ${inter.className}`}>
-                  &quot {testimony.testimony} &quot
-                </h3>
-                <div className="flex flex-row gap-2 items-center">
-                  <Image src={testimony.image} height={44} width={44} alt={testimony.name + "review image"} className="rounded-full" />
-                  <p className={`${inter.className} text-[18px]/[27px] font-normal text-white`}>
-                    {testimony.name}
-                  </p>
+        <div className="py-11 px-5 md:px-10 md:py-12 lg:py-19 lg:px-[115px] bg-[url(/images/testimonial-bg-mobile.svg)] md:bg-[url(/images/testimonial-bg-tablet.svg)] lg:bg-[url(/images/testimonial-bg-desktop.svg)] bg-cover bg-no-repeat bg-center rounded-lg md:rounded-2xl mb-[104px] md:mb-[168px]">
+          <div className="flex flex-col gap-12 md:gap-16 items-start md:items-center max-w-[1360px] mx-auto">
+            <h2 className={`${inter.className} text-[32px]/[32px] md:text-[53px]/[53px] font-medium text-start md:text-center text-white`}>
+              Accurate taxes. <br className="md:hidden" />
+              Stress-free crypto.
+            </h2>
+            <div className="flex flex-col gap-4 md:gap-8 lg:grid lg:grid-cols-2 lg:grid-rows-1 lg:max-w-[1130px]">
+            {
+              testimonials.map((testimony) => (
+                <div className="p-5 md:p-10 gap-6 md:gap-10 flex flex-col items-start justify-between rounded-lg bg-[#333333] bg-[url(/images/quote.svg)] bg-[45%_120%] md:bg-[80%_130%] lg:bg-[80%_100%] bg-no-repeat bg-[length:200px_100px]" key={testimony.id}>
+                  <h3 className={`text-white text-[18px]/[27px] md:text-[20px]/[30px] font-medium text-start ${inter.className}`}>
+                    &quot {testimony.testimony} &quot
+                  </h3>
+                  <div className="flex flex-row gap-2 items-center">
+                    <Image src={testimony.image} height={44} width={44} alt={testimony.name + "review image"} className="rounded-full" />
+                    <p className={`${inter.className} text-[18px]/[27px] font-normal text-white`}>
+                      {testimony.name}
+                    </p>
+                  </div>
                 </div>
-              </div>
-            ))
-          }
+              ))
+            }
+            </div>
           </div>
         </div>
         <SectionWrapper>
@@ -163,16 +165,39 @@ export default function Home() {
             }
           </div>
         </SectionWrapper>
-        <div className="flex flex-col lg:flex-row lg:items-center py-12 px-4 md:py-18 md:px-19 gap-16 bg-[url(/images/form-bg-mobile.svg)] md:bg-[url(/images/form-bg-tablet.svg)] lg:bg-[url(/images/form-bg-desktop.svg)] rounded-lg md:rounded-2xl bg-center bg-cover bg-no-repeat mb-[104px] max-w-[1360px] mx-auto">
-          <div className="flex flex-col gap-4 w-full lg:w-1/2">
-            <h2 className={`text-[44px]/[44px] ${inter.className} font-medium text-white text-start md:text-center md:text-[73px]/[73px] lg:text-start`}>
-              Struggling with Blockchain Management?
-            </h2>
-            <p className={`${inter.className} text-[16px]/[24px] font-normal text-[#CCCCCC] text-start md:text-center md:text-[24px]/[36px] lg:text-start`}>
-              Fill this form and get your free solution now!
-            </p>
-          </div>
-          <div className="h-100 p-2 bg-[#333333] rounded-lg lg:w-1/2"></div>
+        <div className=" py-12 px-4 md:py-18 md:px-19 bg-[url(/images/form-bg-mobile.svg)] md:bg-[url(/images/form-bg-tablet.svg)] lg:bg-[url(/images/form-bg-desktop.svg)] rounded-lg md:rounded-2xl bg-center bg-cover bg-no-repeat mb-[104px]">
+            <div className="flex flex-col lg:flex-row lg:items-center max-w-[1360px] mx-auto  gap-16">
+              <div className="flex flex-col gap-4 w-full lg:w-1/2">
+                <h2 className={`text-[44px]/[44px] ${inter.className} font-medium text-white text-start md:text-center md:text-[73px]/[73px] lg:text-start`}>
+                  Struggling with Blockchain Management?
+                </h2>
+                <p className={`${inter.className} text-[16px]/[24px] font-normal text-[#CCCCCC] text-start md:text-center md:text-[24px]/[36px] lg:text-start`}>
+                  Fill this form and get your free solution now!
+                </p>
+              </div>
+              <div className="h-100 p-2 bg-[#333333] rounded-lg lg:w-1/2">
+                <iframe
+                  src="https://app.bcmanagement.us/widget/form/EYUSmZfH6D3oOObAFsCW"
+                  //style={{"width:100%;height:100%;border:none;border-radius:3px"}}
+                  className="w-full h-full border-none"
+                  id="inline-EYUSmZfH6D3oOObAFsCW" 
+                  data-layout="{'id':'INLINE'}"
+                  data-trigger-type="alwaysShow"
+                  data-trigger-value=""
+                  data-activation-type="alwaysActivated"
+                  data-activation-value=""
+                  data-deactivation-type="neverDeactivate"
+                  data-deactivation-value=""
+                  data-form-name="New BCM Form"
+                  data-height="432"
+                  data-layout-iframe-id="inline-EYUSmZfH6D3oOObAFsCW"
+                  data-form-id="EYUSmZfH6D3oOObAFsCW"
+                  title="New BCM Form"
+                      >
+                </iframe>
+                <script src="https://app.bcmanagement.us/js/form_embed.js"></script>
+              </div>
+            </div>
         </div>
         <SectionWrapper>
           <SectionTitle title="Pricing Plans That Work For Everyone." />
@@ -297,13 +322,13 @@ export default function Home() {
             </div>
           </div>
         </SectionWrapper>
-        <div className="flex flex-col lg:flex-row rounded-lg md:rounded-2xl border border-[#333333]  bg-black mb-[64px] gap-10 max-w-[1360px] mx-auto 
+        <div className="flex flex-col lg:flex-row rounded-lg md:rounded-2xl border border-[#333333]  bg-black mb-[64px] gap-10
         bg-[url('/images/consultation.svg'),_url('/orange-tint.svg'),_url('/images/grid.svg')] 
         h-150 sm:h-200 md:h-250 lg:h-150 
         bg-no-repeat bg-[length:contain,auto,cover] bg-[position:bottom,top_center,center] 
         md:bg-no-repeat md:bg-[length:contain,auto,cover] md:bg-[position:bottom_center,center_-20%,center] 
-        lg:bg-[length:auto,auto,cover] lg:bg-[position:bottom_right,-70%_center,center]">
-          <div className="flex flex-col gap-6 px-5 md:px-18 lg:w-[60%] mt-20 lg:my-21">
+        lg:bg-[length:auto,auto,cover] lg:bg-[position:bottom_right,-70%_center,center]  2xl:bg-[position:bottom_right,150%_center,center]">
+          <div className="flex flex-col gap-6 px-5 md:px-18 lg:w-[60%] mt-20 lg:my-21 max-w-[1360px] mx-auto ">
             <h2 className={`${inter.className} text-[44px]/[44px] md:text-[73px]/[73px] text-white text-start font-medium`}>
               Still Got Questions? <br />
               Book a Free 15 minutes Consultation.
