@@ -3,7 +3,7 @@ import { Inter } from 'next/font/google';
 import blogTitles from "@/data/blogTitles.json"
 import Link from 'next/link';
 
-export const inter = Inter({
+const inter = Inter({
   variable: "--font-inter",
   subsets: ["latin"],
 });
