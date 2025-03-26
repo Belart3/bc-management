@@ -34,12 +34,12 @@ const Navbar = () => {
                     about us
                 </li>
             </Link>
-            <Link href="">
+            <Link href="/contact-us">
                 <li className={`capitalize text-[16px]/[16px] font-normal text-black ${inter.className}`}>
                     contact us
                 </li>
             </Link>
-            <Link href="">
+            <Link href="/blog">
                 <li className={`capitalize text-[16px]/[16px] font-normal text-black ${inter.className}`}>
                     blog
                 </li>

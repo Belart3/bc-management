@@ -1,51 +1,61 @@
 "use client"
 import Image from 'next/image'
 import React from 'react'
-import { Swiper, SwiperSlide } from 'swiper/react'
-import { Autoplay, FreeMode } from 'swiper/modules'
-import 'swiper/css';
 
 
 //type Props = {}
 
 const ImageSlider = () => {
   return (
-    <Swiper
-      spaceBetween={32}
-      slidesPerView={5}
-      loop={true}
-      autoplay={{
-        delay: 0,
-        disableOnInteraction: false,
-        
-      }}
-      speed={3000}
-      freeMode={{enabled:true, momentum: true}}
-      grabCursor={true}
-      modules={[Autoplay, FreeMode]}
-      // onSlideChange={() => console.log('slide change')}
-      // onSwiper={(swiper) => console.log(swiper)}
-      className='flex flex-row max-w-[1000px] mb-[104px] md:mb-[168px]'
-    >
-      <SwiperSlide>
-        <Image src="./images/xrp.svg" height={40} width={40} alt='' className=' lg:size-[70px]' />
-      </SwiperSlide>
-      <SwiperSlide>
-        <Image src="./images/btc.svg" height={40} width={40} alt='' className=' lg:size-[70px]' />
-      </SwiperSlide>
-      <SwiperSlide>
-        <Image src="./images/eth.svg" height={40} width={40} alt='' className=' lg:size-[70px]' />
-      </SwiperSlide>
-      <SwiperSlide>
-        <Image src="./images/shib.svg" height={40} width={40} alt='' className=' lg:size-[70px]' />
-      </SwiperSlide>
-      <SwiperSlide>
-        <Image src="./images/sol.svg" height={40} width={40} alt='' className=' lg:size-[70px]' />
-      </SwiperSlide>
-      <SwiperSlide>
-        <Image src="./images/bnb.svg" height={40} width={40} alt='' className=' lg:size-[70px]' />
-      </SwiperSlide>
-    </Swiper>
+    <div className="overflow-hidden flex flex-row mb-[104px] md:mb-[168px] gap-[56px] group">
+      <ul className='flex flex-row justify-between items-center gap-x-4 select-none min-w-full animate-infinite-scroll shrink-0 group-hover:[animation-play-state:paused]'>
+        <li className="cursor-pointer">
+          <Image src="./images/xrp.svg" height={40} width={40} alt='' className=' lg:size-[70px] min-w-10 min-h-10 select-none' />
+        </li>
+        <li className="cursor-pointer">
+          <Image src="./images/btc.svg" height={40} width={40} alt='' className=' lg:size-[70px] min-w-10 min-h-10' />
+        </li>
+        <li className="cursor-pointer">
+          <Image src="./images/eth.svg" height={40} width={40} alt='' className=' lg:size-[70px] min-w-10 min-h-10' />
+        </li>
+        <li className="cursor-pointer">
+          <Image src="./images/shib.svg" height={40} width={40} alt='' className=' lg:size-[70px] min-w-10 min-h-10' />
+        </li>
+        <li className="cursor-pointer">
+          <Image src="./images/sol.svg" height={40} width={40} alt='' className=' lg:size-[70px] min-w-10 min-h-10' />
+        </li>
+        <li className="cursor-pointer">
+          <Image src="./images/bnb.svg" height={40} width={40} alt='' className=' lg:size-[70px] min-w-10 min-h-10' />
+        </li>
+        <li className="cursor-pointer">
+          <Image src="./images/polkadot.svg" height={40} width={40} alt='' className=' lg:size-[70px]' />
+        </li>
+      </ul>
+
+      <ul aria-hidden="true" className='flex flex-row justify-between gap-x-4 select-none min-w-full animate-infinite-scroll group-hover:[animation-play-state:paused] shrink-0'>
+        <li>
+          <Image src="./images/xrp.svg" height={40} width={40} alt='' className=' lg:size-[70px] min-w-10 min-h-10 select-none' />
+        </li>
+        <li>
+          <Image src="./images/btc.svg" height={40} width={40} alt='' className=' lg:size-[70px] min-w-10 min-h-10' />
+        </li>
+        <li>
+          <Image src="./images/eth.svg" height={40} width={40} alt='' className=' lg:size-[70px] min-w-10 min-h-10' />
+        </li>
+        <li>
+          <Image src="./images/shib.svg" height={40} width={40} alt='' className=' lg:size-[70px] min-w-10 min-h-10' />
+        </li>
+        <li>
+          <Image src="./images/sol.svg" height={40} width={40} alt='' className=' lg:size-[70px] min-w-10 min-h-10' />
+        </li>
+        <li>
+          <Image src="./images/bnb.svg" height={40} width={40} alt='' className=' lg:size-[70px] min-w-10 min-h-10' />
+        </li>
+        <li>
+          <Image src="./images/polkadot.svg" height={40} width={40} alt='' className=' lg:size-[70px]' />
+        </li>
+      </ul>
+    </div>
   )
 }
 

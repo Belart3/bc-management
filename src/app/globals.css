@@ -13,12 +13,40 @@
         0% { transform: rotate(0deg) scale(10) }
         100% { transform: rotate(360deg) scale(10) }
     }
-
+    @keyframes grow {
+      0% {
+        opacity: 0.5;
+        scale: 0.8;
+      }
+      50% {
+        opacity: 1;
+        scale: 1;
+      }
+      100% {
+        opacity: 0.5;
+        scale: 0.8;
+      }
+    }
+    @keyframes infinite-scroll {
+      to{
+        transform: translateX(calc(-100% - 56px));
+      }
+    }
     .animate-rotate {
         animation: rotate 8s linear infinite;
       }
   
     .animate-bounce-twist {
       animation: bounceTwist 1s infinite ease-in-out;
+    }
+
+    .animate-grow {
+      animation: grow linear;
+      animation-timeline: view();
+      animation-range: entry 0 cover 100%;
+    }
+    .animate-infinite-scroll {
+      animation: infinite-scroll infinite linear ;
+      animation-duration: 20s;
     }
   }
