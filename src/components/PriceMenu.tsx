@@ -1,9 +1,15 @@
-import { inter } from '@/app/page'
+import { Inter } from "next/font/google";
 import { Menu, MenuButton, MenuItem, MenuItems } from '@headlessui/react'
 import { ChevronDownIcon } from '@heroicons/react/20/solid'
 import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
+
+
+const inter = Inter({
+  variable: "--font-inter",
+  subsets: ["latin"],
+});
 
 export default function Example() {
     return (

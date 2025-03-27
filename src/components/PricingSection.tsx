@@ -1,8 +1,12 @@
-import { inter } from '@/app/page'
+import { Inter } from "next/font/google";
 import Image from 'next/image'
 import React from 'react'
 import PriceMenu from './PriceMenu'
 
+const inter = Inter({
+  variable: "--font-inter",
+  subsets: ["latin"],
+});
 
 const PricingSection = () => {
   return (

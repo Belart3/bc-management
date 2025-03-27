@@ -12,7 +12,7 @@ import Script from "next/script";
 import { motion, AnimatePresence } from "framer-motion";
 import PricingSection from "@/components/PricingSection";
 
-export const inter = Inter({
+const inter = Inter({
   variable: "--font-inter",
   subsets: ["latin"],
 });
