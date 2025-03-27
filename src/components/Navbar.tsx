@@ -16,10 +16,10 @@ const Navbar = () => {
   return (
     <nav className='px-4 py-3 md:px-5 md:py-4 flex flex-row justify-between items-center rounded-xl md:rounded-3xl bg-[#ffffffd0] border border-[#E6E6E6] shadow-lg w-[90%] fixed left-[50%] -translate-x-[50%] lg:max-w-[1130px] top-5 md:top-10 z-50 backdrop-blur-[15px]'>
         <Link href="/">
-            <Image src="./logo.svg" height={40} width={120} alt='BlockChain Management' className='h-8 w-[94px]' />
+            <Image src="/logo.svg" height={40} width={120} alt='BlockChain Management' className='h-8 w-[94px]' />
         </Link>
         <ul className='hidden flex-row items-center gap-x-2 xl:gap-x-6 lg:flex'>
-            <Link href="">
+            <Link href="/#problems">
                 <li className={`capitalize text-[16px]/[16px] font-normal text-black ${inter.className}`}>
                     your problem
                 </li>

@@ -10,8 +10,9 @@ import testimonials from "@/data/testimonials.json"
 import features from "@/data/features.json"
 import Script from "next/script";
 import { motion, AnimatePresence } from "framer-motion";
+import PricingSection from "@/components/PricingSection";
 
-const inter = Inter({
+export const inter = Inter({
   variable: "--font-inter",
   subsets: ["latin"],
 });
@@ -74,7 +75,7 @@ export default function Home() {
             <div className="animate-rotate absolute inset-0 h-full w-full rounded-full bg-[conic-gradient(#DD4A00_0deg,transparent_90deg)]"></div>
 
             <div className="h-[calc(100%-4px)] w-[calc(100%-4px)] backdrop-blur-[10px] rounded-[10px] bg-gray-100">
-              <div className="h-full w-full backdrop-blur-[10px] rounded-[10px] bg-[#00000080] mx-auto my-auto p-1 md:p-2 border border-[#F4844C40]">
+              <div className="h-full w-full backdrop-blur-[10px] rounded-[10px] bg-[#00000080] mx-auto my-auto p-1 md:p-2 border-[4px] border-[#F4844C60]">
                 <div className="bg-black h-full w-full rounded-[6px]">
                   <video playsInline controls loop preload="none" className="h-full w-full rounded-sm md:rounded-lg" >
                     <source src="/videos/Defi crypto tax services and Defi blockchain tax management.mp4" type="video/mp4" className=" " />
@@ -88,7 +89,7 @@ export default function Home() {
       </header>
       <main>
         <ImageSlider />
-        <SectionWrapper>
+        <SectionWrapper id="problems">
           <SectionTitle 
             title="Seamless DeFi Tax Calculation." 
             paragraph="Effortlessly track and calculate DeFi taxes with accurate cost basis, wallet consolidation, and audit-ready reports."
@@ -130,7 +131,7 @@ export default function Home() {
             </AnimatePresence>
           </div>
         </SectionWrapper>
-        <div className="py-11 px-5 md:px-10 md:py-12 lg:py-19 lg:px-[115px] bg-[url(/images/testimonial-bg-mobile.svg)] md:bg-[url(/images/testimonial-bg-tablet.svg)] lg:bg-[url(/images/testimonial-bg-desktop.svg)] bg-cover bg-no-repeat bg-center rounded-lg md:rounded-2xl mb-[104px] md:mb-[168px] animate-grow">
+        <motion.div className="py-11 px-5 md:px-10 md:py-12 lg:py-19 lg:px-[115px] bg-[url(/images/testimonial-bg-mobile.svg)] md:bg-[url(/images/testimonial-bg-tablet.svg)] lg:bg-[url(/images/testimonial-bg-desktop.svg)] bg-cover bg-no-repeat bg-center rounded-lg md:rounded-2xl mb-[104px] md:mb-[168px] animate-grow">
           <div className="flex flex-col gap-12 md:gap-16 items-start md:items-center max-w-[1360px] mx-auto">
             <h2 className={`${inter.className} text-[32px]/[32px] md:text-[53px]/[53px] font-medium text-start md:text-center text-white`}>
               Accurate taxes. <br className="md:hidden" />
@@ -154,7 +155,7 @@ export default function Home() {
             }
             </div>
           </div>
-        </div>
+        </motion.div>
         <SectionWrapper>
           <SectionTitle title="What Makes Us Different?" />
           <div className="flex flex-col gap-10 lg:gap-16 max-w-[1130px] mx-auto">
@@ -213,126 +214,7 @@ export default function Home() {
         </div>
         <SectionWrapper>
           <SectionTitle title="Pricing Plans That Work For Everyone." />
-          <div className="flex flex-col gap-4 sm:gap-x-[1%] sm:flex-row sm:flex-wrap w-full max-w-[700px] lg:max-w-[1300px] lg:gap-0 lg:justify-between mx-auto">
-            <div className="rounded-[12px] bg-[#F4844C4D] p-[6px] w-full  sm:w-[55%] sm:min-w-[400px] lg:w-[32%] lg:min-w-[100px] mx-auto lg:mx-0 order-1 lg:order-2">
-              <div className="p-5 bg-[#F4844C] flex flex-col gap-6 rounded-lg">
-                <div className="gap-6 flex flex-col border-b pb-6 border-[#CCC]">
-                  <p className={`${inter.className} text-white text-start text-[18px]/[18px] font-medium capitalize`}>
-                    Advanced
-                  </p>
-                  <div className="flex flex-col gap-2">
-                    <p className={`${inter.className} text-white text-start text-[32px]/[32px] font-medium`}>
-                      $439.99/mo
-                    </p>
-                    <p className={`${inter.className} text-white text-start text-[14px]/[21px] font-normal capitalize`}>
-                      Billed Yearly
-                    </p>
-                  </div>
-                  <div className="flex flex-col gap-3">
-                    <button className={`py-4 px-6 bg-white rounded-2xl gap-2 flex flex-row items-center justify-center capitalize font-medium text-[16px]/[16px] text-[#F4844C] ${inter.className} `}>
-                      <Image src="./images/pay-with-card.svg" height={24} width={24} alt="" />
-                      pay with card
-                    </button>
-                    <p className={`${inter.className} text-[#E6E6E6] text-[16px]/[16px] font-medium text-center capitalize`}>Or</p>
-                    <button className={`py-4 px-6 bg-white rounded-2xl gap-2 flex flex-row items-center justify-center capitalize font-medium text-[16px]/[16px] text-[#F4844C] ${inter.className} `}>
-                      <Image src="./images/pay-with-crypto.svg" height={24} width={24} alt="" />
-                      pay with crypto
-                    </button>
-                  </div>
-                </div>
-                <ul className="flex flex-col gap-3 items-start w-full">
-                  <li className={`text-white ${inter.className} text-[16px]/[24px] font-normal text-start capitalize list-disc ms-5`}>
-                    Up to 25 wallets
-                  </li>
-                  <li className={`text-white ${inter.className} text-[16px]/[24px] font-normal text-start capitalize list-disc ms-5`}>
-                    Up to 10,000 transactions per fiscal year
-                  </li>
-                  <li className={`text-white ${inter.className} text-[16px]/[24px] font-normal text-start capitalize list-disc ms-5`}>
-                    Quarterly summary report
-                  </li>
-                  <li className={`text-white ${inter.className} text-[16px]/[24px] font-normal text-start capitalize list-disc ms-5`}>
-                    Book keeping verification
-                  </li>
-                </ul>
-              </div>
-            </div>
-
-            <div className="p-5 bg-white flex flex-col gap-6 rounded-lg w-full sm:w-[49%] lg:w-[32%] border border-[#CCCCCC] order-2 lg:order-1">
-              <div className="gap-6 flex flex-col border-b pb-6 border-[#CCC]">
-                <p className={`${inter.className} text-black text-start text-[18px]/[18px] font-medium capitalize`}>
-                  Basic
-                </p>
-                <div className="flex flex-col gap-2">
-                  <p className={`${inter.className} text-black text-start text-[32px]/[32px] font-medium`}>
-                    $19.99/mo
-                  </p>
-                  <p className={`${inter.className} text-[#666666] text-start text-[14px]/[21px] font-normal capitalize`}>
-                    Billed Yearly
-                  </p>
-                </div>
-                <div className="flex flex-col gap-3">
-                  <button className={`py-4 px-6 bg-white rounded-2xl gap-2 flex flex-row items-center justify-center capitalize text-[16px]/[16px] text-[#F4844C] border border-[#F4844C] ${inter.className} font-medium`}>
-                    <Image src="./images/pay-with-card.svg" height={24} width={24} alt="" />
-                    pay with card
-                  </button>
-                  <p className={`${inter.className} text-[#666666] text-[16px]/[16px] font-medium text-center capitalize`}>Or</p>
-                  <button className={`py-4 px-6 bg-white rounded-2xl gap-2 flex flex-row items-center justify-center capitalize text-[16px]/[16px] border border-[#F4844C] text-[#F4844C] font-medium ${inter.className} `}>
-                    <Image src="./images/pay-with-crypto.svg" height={24} width={24} alt="" />
-                    pay with crypto
-                  </button>
-                </div>
-              </div>
-              <ul className="flex flex-col gap-3 items-start w-full">
-                <li className={`text-black ${inter.className} text-[16px]/[24px] font-normal text-start capitalize list-disc ms-5`}>
-                  Up to 2 wallets
-                </li>
-                <li className={`text-black ${inter.className} text-[16px]/[24px] font-normal text-start capitalize list-disc ms-5`}>
-                  Up to 350 transactions per fiscal year
-                </li>
-                <li className={`text-black ${inter.className} text-[16px]/[24px] font-normal text-start capitalize list-disc ms-5`}>
-                  yearly summary report
-                </li>
-              </ul>
-            </div>
-
-            <div className="p-5 bg-white flex flex-col gap-6 rounded-lg w-full sm:w-[49%] lg:w-[32%] border border-[#CCCCCC] order-3 lg:order-3">
-              <div className="gap-6 flex flex-col border-b pb-6 border-[#CCC]">
-                <p className={`${inter.className} text-black text-start text-[18px]/[18px] font-medium capitalize`}>
-                  Standard
-                </p>
-                <div className="flex flex-col gap-2">
-                  <p className={`${inter.className} text-black text-start text-[32px]/[32px] font-medium`}>
-                    $74.99/mo
-                  </p>
-                  <p className={`${inter.className} text-[#666666] text-start text-[14px]/[21px] font-normal capitalize`}>
-                    Billed Yearly
-                  </p>
-                </div>
-                <div className="flex flex-col gap-3">
-                  <button className={`py-4 px-6 bg-white rounded-2xl gap-2 flex flex-row items-center justify-center capitalize text-[16px]/[16px] text-[#F4844C] border border-[#F4844C] ${inter.className} font-medium`}>
-                    <Image src="./images/pay-with-card.svg" height={24} width={24} alt="" />
-                    pay with card
-                  </button>
-                  <p className={`${inter.className} text-[#666666] text-[16px]/[16px] font-medium text-center capitalize`}>Or</p>
-                  <button className={`py-4 px-6 bg-white rounded-2xl gap-2 flex flex-row items-center justify-center capitalize text-[16px]/[16px] border border-[#F4844C] text-[#F4844C] font-medium ${inter.className} `}>
-                    <Image src="./images/pay-with-crypto.svg" height={24} width={24} alt="" />
-                    pay with crypto
-                  </button>
-                </div>
-              </div>
-              <ul className="flex flex-col gap-3 items-start w-full">
-                <li className={`text-black ${inter.className} text-[16px]/[24px] font-normal text-start capitalize list-disc ms-5`}>
-                  Up to 5 wallets
-                </li>
-                <li className={`text-black ${inter.className} text-[16px]/[24px] font-normal text-start capitalize list-disc ms-5`}>
-                  Up to 1000 transactions per fiscal year
-                </li>
-                <li className={`text-black ${inter.className} text-[16px]/[24px] font-normal text-start capitalize list-disc ms-5`}>
-                  yearly summary report
-                </li>
-              </ul>
-            </div>
-          </div>
+            <PricingSection />
         </SectionWrapper>
         <div className="flex flex-col lg:flex-row rounded-lg md:rounded-2xl border border-[#333333]  bg-black mb-[64px] gap-10
         bg-[url('/images/consultation.svg'),_url('/orange-tint.svg'),_url('/images/grid.svg')] 

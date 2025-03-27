@@ -22,7 +22,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className=" mt-[10px] md:mt-5"
+        className=" mt-[10px] md:mt-5 scroll-smooth"
       >
         <div className={`${inter.variable} antialiased mx-5 lg:mx-10 bg-white relative`}>
           <Navbar />
