@@ -3,9 +3,8 @@ import Image from 'next/image'
 import React from 'react'
 import PriceMenu from './PriceMenu'
 
-type Props = {}
 
-const PricingSection = (props: Props) => {
+const PricingSection = () => {
   return (
         <div className="flex flex-col gap-4 sm:gap-x-[1%] sm:flex-row sm:flex-wrap w-full max-w-[700px] lg:max-w-[1300px] lg:gap-0 lg:justify-between mx-auto">
             <div className="rounded-[12px] bg-[#F4844C4D] p-[6px] w-full  sm:w-[55%] sm:min-w-[400px] lg:w-[32%] lg:min-w-[100px] mx-auto lg:mx-0 order-1 lg:order-2">
