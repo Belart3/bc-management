@@ -4,6 +4,7 @@ import { ChevronDownIcon } from '@heroicons/react/20/solid'
 import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
+import wallets from '@/data/wallets.json'
 
 
 const inter = Inter({
@@ -27,46 +28,18 @@ export default function Example() {
           className="absolute right-0 z-10 mt-2 origin-top-right divide-y divide-gray-100 rounded-md bg-white ring-1 shadow-lg ring-black/5 transition focus:outline-hidden data-closed:scale-95 data-closed:transform data-closed:opacity-0 data-enter:duration-100 data-enter:ease-out data-leave:duration-75 data-leave:ease-in w-full"
         >
           <div className="py-1">
-            <MenuItem>
-              <Link
-                href="/pay/eth"
-                className={`block px-4 py-2 text-sm text-gray-700 data-focus:bg-gray-100 data-focus:text-gray-900 data-focus:outline-hidden uppercase ${inter.className}`}
-              >
-                eth
-              </Link>
-            </MenuItem>
-            <MenuItem>
-              <Link
-                href="/pay/solana"
-                className={`block px-4 py-2 text-sm text-gray-700 data-focus:bg-gray-100 data-focus:text-gray-900 data-focus:outline-hidden uppercase ${inter.className}`}
-              >
-                solana
-              </Link>
-            </MenuItem>
-            <MenuItem>
-              <Link
-                href="/pay/usdt"
-                className={`block px-4 py-2 text-sm text-gray-700 data-focus:bg-gray-100 data-focus:text-gray-900 data-focus:outline-hidden uppercase ${inter.className}`}
-              >
-                usdt
-              </Link>
-            </MenuItem>
-            <MenuItem>
-              <Link
-                href="/pay/usdc"
-                className={`block px-4 py-2 text-sm text-gray-700 data-focus:bg-gray-100 data-focus:text-gray-900 data-focus:outline-hidden uppercase ${inter.className}`}
-              >
-                usdc
-              </Link>
-            </MenuItem>
-            <MenuItem>
-              <Link
-                href="/pay/bitcoin"
-                className={`block px-4 py-2 text-sm text-gray-700 data-focus:bg-gray-100 data-focus:text-gray-900 data-focus:outline-hidden uppercase ${inter.className}`}
-              >
-                bitcoin
-              </Link>
-            </MenuItem>
+            {
+              wallets.map((wallet) => (
+                <MenuItem key={wallet.id}>
+                <Link
+                  href="/pay/eth"
+                  className={`block px-4 py-2 text-sm text-gray-700 data-focus:bg-gray-100 data-focus:text-gray-900 data-focus:outline-hidden uppercase ${inter.className}`}
+                >
+                  {wallet.id}
+                </Link>
+              </MenuItem>
+              ))
+            }
           </div>
         </MenuItems>
       </Menu>
