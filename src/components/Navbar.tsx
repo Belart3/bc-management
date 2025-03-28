@@ -57,7 +57,7 @@ const Navbar = () => {
                 </button>
             </Link>
         </ul>
-        <button className='flex lg:hidden'>
+        <button className='flex lg:!hidden'>
             <Hamburger size={40}/>
         </button>
     </nav>
