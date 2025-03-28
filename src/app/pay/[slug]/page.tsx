@@ -36,7 +36,7 @@ export default async function ProductPage({ params }: { params: Promise<{ slug: 
                                     <p className={`${inter.className} text-wrap text-[16px]/[24px] md:text-[18px]/[27px] font-bold text-[#333333]`}>
                                         0x60d38b02935D679648d9784AA77C9b7f406edc25
                                     </p>
-                                    <ClickCopy copyText='' />
+                                    <ClickCopy copyText='0x60d38b02935D679648d9784AA77C9b7f406edc25' />
                                 </div>
                             </div>
                             <div className='flex flex-col md:flex-row md:items-center gap-2 items-start'>

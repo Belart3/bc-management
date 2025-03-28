@@ -9,11 +9,10 @@ type Props = {
 
 const ClickCopy = (props: Props) => {
     const [copied, setCopied] = useState(false)
-    const copyText = "i am copied"
 
     const handleCopy = async () => {
         try {
-          await navigator.clipboard.writeText(copyText);
+          await navigator.clipboard.writeText(props.copyText);
           setCopied(true);
           setTimeout(() => setCopied(false), 2000);
         } catch (err) {
