@@ -16,7 +16,7 @@ export async function generateStaticParams() {
     }))
 }
 
-export default async function ProductPage({params}: { params: { slug: string } }){
+export default async function ProductPage({params}: { params: Promise<{ slug: string }> }){
     const {slug} = await params
     const wallet = wallets.find(p => p.id.toString() === slug)
     if (!wallet) {
