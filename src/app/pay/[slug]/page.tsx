@@ -2,27 +2,38 @@ import ClickCopy from '@/components/ClickCopy';
 import { Inter } from 'next/font/google'
 import Image from 'next/image';
 import Link from 'next/link';
+import wallets from '@/data/wallets.json'
+import { notFound } from 'next/navigation';
 
 const inter = Inter({
   variable: "--font-inter",
   subsets: ["latin"],
 });
 
-export default async function ProductPage({ params }: { params: Promise<{ slug: string }> }) {
-    const { slug } = await params
+export async function generateStaticParams() {
+    return wallets.map((wallet) => ({
+        slug: wallet.id.toString(),
+    }))
+}
 
-    
+export default async function ProductPage({params}: { params: { slug: string } }){
+    const {slug} = await params
+    const wallet = wallets.find(p => p.id.toString() === slug)
+    if (!wallet) {
+      return notFound()
+    }
+
     return (
         <div className='mt-[140px] md:mt-[216px] lg:mt-[224px] flex flex-col md:max-w-[600px] lg:max-w-[1130px] mx-auto mb-16 lg:mb-26 gap-12 md:gap-16'>
             <div className="">
                 <h1 className={`${inter.className} text-[44px]/[44px] md:text-[73px]/[73px] font-medium text-center text-black`}>
                     Step by Step Guide for Crypto Payments Via
-                    <span className="uppercase" > {slug}</span>.
+                    <span className="uppercase" > {wallet.id}</span>.
                 </h1>
             </div>
             <div className="flex flex-col gap-6 md:gap-10 w-full">
                 <p className={`${inter.className} text-black text-[18px]/[18px] md:text-[20px]/[20px] text-start font-medium`}>
-                    To complete your payment using <span className="uppercase" > {slug}</span>, please adhere to the detailed procedure outlined below to guarantee successful activation of your account:
+                    To complete your payment using <span className="uppercase" > {wallet.id}</span>, please adhere to the detailed procedure outlined below to guarantee successful activation of your account:
                 </p>
                 <ul className='flex flex-col gap-6 items-start w-full'>
                     <li className=' list-decimal text-wrap'>
@@ -34,13 +45,13 @@ export default async function ProductPage({ params }: { params: Promise<{ slug: 
                                 </p>
                                 <div className="flex flex-row items-center gap-0.5 w-full max-w-[300px] md:max-w-none flex-wrap">
                                     <p className={`${inter.className} text-wrap text-[16px]/[24px] md:text-[18px]/[27px] font-bold text-[#333333]`}>
-                                        0x60d38b02935D679648d9784AA77C9b7f406edc25
+                                        {wallet.address}
                                     </p>
-                                    <ClickCopy copyText='0x60d38b02935D679648d9784AA77C9b7f406edc25' />
+                                    <ClickCopy copyText={wallet.address} />
                                 </div>
                             </div>
                             <div className='flex flex-col md:flex-row md:items-center gap-2 items-start'>
-                                <Image src="/images/wallets/BITCOIN-wallet-qr-code.png" height={160} width={160} alt="scan qr code" />
+                                <Image src={wallet.qrCode} height={160} width={160} alt="scan qr code" />
                                 <div className="flex flex-row gap-2 items-start">
                                     <Image src='/images/information-circle.svg' height={24} width={24} alt='more info' /> 
                                     <p className={`${inter.className} text-[#999999] text-[14px]/[21px] md:text-[16px]/[24px] font-normal text-start`}>

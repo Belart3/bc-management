@@ -1,0 +1,27 @@
+[  
+  {
+    "id": "bitcoin",
+    "address": "bc1qa4ynjqjcrfjr0n5qugamqrw2mhm20vhthlutd6",
+    "qrCode": "/images/wallets/BITCOIN-wallet-qr-code.png"
+  },
+  {
+    "id": "eth",
+    "address": "0x60d38b02935D679648d9784AA77C9b7f406edc25",
+    "qrCode": "/images/wallets/ETH-wallet-qr-code.png"
+  },
+  {
+    "id": "solana",
+    "address": "J92cjVtcFZ581f3fUX5LMdVpSiPaNWmNRXaWQs4UhfTW",
+    "qrCode": "/images/wallets/SOLANA-wallet-qr-code.png"
+  },
+  {
+    "id": "usdt",
+    "address": "0x60d38b02935D679648d9784AA77C9b7f406edc25",
+    "qrCode": "/images/wallets/USDT-wallet-qr-code.png"
+  },
+  {
+    "id": "usdc",
+    "address": "0x60d38b02935D679648d9784AA77C9b7f406edc25",
+    "qrCode": "/images/wallets/USDC-wallet-qr-code.png"
+  }
+]
