@@ -1,7 +1,12 @@
 "use client"
-import { inter } from '@/app/pay/[slug]/page'
+import { Inter } from 'next/font/google';
 import Image from 'next/image'
 import React, { useState } from 'react'
+
+const inter = Inter({
+  variable: "--font-inter",
+  subsets: ["latin"],
+});
 
 type Props = {
     copyText: string,
