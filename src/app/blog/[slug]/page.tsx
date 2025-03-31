@@ -1,6 +1,5 @@
 import blogs from '@/data/blogData.json'
 import { notFound } from 'next/navigation'
-import Image from 'next/image'
 import { Inter } from 'next/font/google'
 import BlogListItem from '@/components/BlogListItem'
 

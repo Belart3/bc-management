@@ -9,7 +9,7 @@ const inter = Inter(
 )
 
 type Props = {
-    title: string | { string: any }; // Keep the type as is
+    title: string | { string: string }; // Keep the type as is
     index: number,
     description?: string,
 }
