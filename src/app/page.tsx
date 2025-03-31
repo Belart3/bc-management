@@ -96,7 +96,7 @@ export default function Home() {
           />
           <div className="flex flex-row items-center p-2 rounded-[24px] bg-[#E6E6E666] max-w-[400px] mx-auto">
             {categories.map((category) => (
-              <button className={`rounded-2xl py-4 px-6 flex items-center justify-centertext-black ${inter.className} text-[16px]/[16px] font-medium capitalize cursor-pointer ${ filter == category.title ? ' bg-white border border-[#E6E6E6] drop-shadow-lg' : 'bg-transparent shadow-none border-none' }`} onClick={
+              <button className={`rounded-2xl py-4 px-6 flex items-center justify-center text-black ${inter.className} text-[16px]/[16px] font-medium capitalize cursor-pointer ${ filter == category.title ? ' bg-white border border-[#E6E6E6] drop-shadow-lg' : 'bg-transparent shadow-none border-none drop-shadow-none' }`} onClick={
                 () => {
                   setfilter(category.title)
                   setSelectedCategory(category.title)
@@ -142,7 +142,7 @@ export default function Home() {
               testimonials.map((testimony) => (
                 <div className="p-5 md:p-10 gap-6 md:gap-10 flex flex-col items-start justify-between rounded-lg bg-[#333333] bg-[url(/images/quote.svg)] bg-[45%_120%] md:bg-[80%_130%] lg:bg-[80%_100%] bg-no-repeat bg-[length:200px_100px]" key={testimony.id}>
                   <h3 className={`text-white text-[18px]/[27px] md:text-[20px]/[30px] font-medium text-start ${inter.className}`}>
-                    <blockquote>{testimony.testimony}</blockquote> 
+                    <blockquote>{`"${testimony.testimony}"`}</blockquote> 
                   </h3>
                   <div className="flex flex-row gap-2 items-center">
                     <Image src={testimony.image} height={44} width={44} alt={testimony.name + "review image"} className="rounded-full" />
@@ -212,13 +212,13 @@ export default function Home() {
               </div>
             </div>
         </div>
-        <SectionWrapper>
+        <SectionWrapper id="pricing" >
           <SectionTitle title="Pricing Plans That Work For Everyone." />
             <PricingSection />
         </SectionWrapper>
         <div className="flex flex-col lg:flex-row rounded-lg md:rounded-2xl border border-[#333333]  bg-black mb-[64px] gap-10
         bg-[url('/images/consultation.svg'),_url('/orange-tint.svg'),_url('/images/grid.svg')] 
-        h-150 sm:h-200 md:h-250 lg:h-150 
+        h-200 md:h-300 lg:h-150 
         bg-no-repeat bg-[length:contain,auto,cover] bg-[position:bottom,top_center,center] 
         md:bg-no-repeat md:bg-[length:contain,auto,cover] md:bg-[position:bottom_center,center_-20%,center] 
         lg:bg-[length:auto,auto,cover] lg:bg-[position:bottom_right,-70%_center,center]  2xl:bg-[position:70%_100%,80%_center,center] animate-grow">

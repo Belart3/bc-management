@@ -50,3 +50,7 @@
       animation-duration: 20s;
     }
   }
+
+html{
+  scroll-behavior: smooth;
+}

@@ -1,6 +1,6 @@
 import React from 'react'
 import { Inter } from 'next/font/google';
-import blogTitles from "@/data/blogTitles.json"
+import blogData from "@/data/blogData.json"
 import Link from 'next/link';
 
 const inter = Inter({
@@ -26,9 +26,9 @@ const Blog = () => {
         </div>
         <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
             {
-                blogTitles.map((blog) => (
+                blogData.map((blog) => (
                     <div className="border border-[#E6E6E6] bg-white rounded-lg group transition-all ease-in-out duration-300 cursor-pointer lg:hover:drop-shadow-lg" key={blog.id}>
-                        <Link href={''} >
+                        <Link href={`/blog/${blog.url.toLowerCase()}`} >
                             <div className="flex flex-col">
                                 <div className="h-30 md:h-53 w-full bg-cover bg-no-repeat bg-center bg-[url('/images/blogs/How-To-Master-Blockchain-Management-Accurate-Tax-Calculations-Made-Easy.png')] rounded-t-lg" style={{backgroundImage: `url(${blog.image})`}}></div>
                                 <div className="flex flex-col p-3 md:p-5 gap-2 md:gap-4">

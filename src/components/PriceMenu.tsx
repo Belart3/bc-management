@@ -30,14 +30,14 @@ export default function Example() {
           <div className="py-1">
             {
               wallets.map((wallet) => (
-                <MenuItem key={wallet.id}>
-                <Link
-                  href="/pay/eth"
-                  className={`block px-4 py-2 text-sm text-gray-700 data-focus:bg-gray-100 data-focus:text-gray-900 data-focus:outline-hidden uppercase ${inter.className}`}
-                >
-                  {wallet.id}
-                </Link>
-              </MenuItem>
+                <MenuItem key={wallet.id} >
+                  <Link
+                    href={`/pay/${wallet.id}`}
+                    className={`block px-4 py-2 text-sm text-gray-700 data-focus:bg-gray-100 data-focus:text-gray-900 data-focus:outline-hidden uppercase ${inter.className} py-4 px-6`}
+                  >
+                    {wallet.id}
+                  </Link>
+                </MenuItem>
               ))
             }
           </div>

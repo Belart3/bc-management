@@ -51,7 +51,7 @@ const Navbar = () => {
                     become an affiliate
                 </li>
             </Link>
-            <Link href="">
+            <Link href="/#pricing" scroll={false}>
                 <button className={`capitalize text-[16px]/[16px] font-normal text-white bg-[#F4844C] rounded-2xl px-6 py-4 ${inter.className} cursor-pointer`}>
                     get started
                 </button>
