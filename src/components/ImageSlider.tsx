@@ -7,7 +7,7 @@ import React from 'react'
 
 const ImageSlider = () => {
   return (
-    <div className="overflow-hidden flex flex-row mb-[104px] md:mb-[168px] gap-[56px] group">
+    <div className="overflow-hidden flex flex-row mb-[104px] md:mb-[168px] gap-[20px] md:gap-[120px] 2xl:gap-[200px] group">
       <ul className='flex flex-row justify-between items-center gap-x-4 select-none min-w-full animate-infinite-scroll shrink-0 group-hover:[animation-play-state:paused]'>
         <li className="cursor-pointer">
           <Image src="./images/xrp.svg" height={40} width={40} alt='' className=' lg:size-[70px] min-w-10 min-h-10 select-none' />

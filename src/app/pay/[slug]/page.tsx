@@ -1,7 +1,6 @@
 import ClickCopy from '@/components/ClickCopy';
 import { Inter } from 'next/font/google'
 import Image from 'next/image';
-import Link from 'next/link';
 import wallets from '@/data/wallets.json'
 import { notFound } from 'next/navigation';
 
@@ -63,7 +62,7 @@ export default async function ProductPage({params}: { params: Promise<{ slug: st
                     </li>
 
                     <li className={`${inter.className} list-decimal text-wrap text-[16px]/[24px] md:text-[18px]/[27px] font-normal text-[#333333]`}>
-                        Fill the <Link href='/'><span className='font-bold text-[#F4844C]'>Payment Form</span></Link> or send an email to us <Link href='mailto:support@bcmanagement.us'><span className='font-bold text-[#F4844C]'>support@bcmanagement.us</span></Link> containing your payment’s transaction hash and your name in the subject of the email.
+                        Fill the <a href='https://forms.monday.com/forms/e200c4f00950b0579b0bbc48b2759743?r=use1'><span className='font-bold text-[#F4844C]'>Payment Form</span></a> or send an email to us <a href='mailto:support@bcmanagement.us'><span className='font-bold text-[#F4844C]'>support@bcmanagement.us</span></a> containing your payment’s transaction hash and your name in the subject of the email.
                     </li>
 
                     <li className={`${inter.className} list-decimal text-wrap text-[16px]/[24px] md:text-[18px]/[27px] font-normal text-[#333333]`}>
@@ -80,27 +79,27 @@ export default async function ProductPage({params}: { params: Promise<{ slug: st
                         <p className={`${inter.className} font-normal text-[#333333] text-[18px]/[27px]`}>
                             Text us or call us
                         </p>
-                        <Link href={'tel:+1-220-226-8720'}>
+                        <a href={'tel:+1-220-226-8720'}>
                             <p className={`text-[#F4844C] text-start ${inter.className} text-[18px]/[27px] font-normal capitalize flex items-center justify-start gap-2`}>
                                 <span>
                                 <Image src="/images/phone-orange.svg" height={24} width={24} alt='' />
                                 </span>
                                 +1-220-226-8720
                             </p>
-                        </Link>
+                        </a>
                     </div>
                     <div className="flex flex-col gap-3 items-start">
                         <p className={`${inter.className} font-normal text-[#333333] text-[18px]/[27px]`}>
                           Send us an email
                         </p>
-                        <Link href={'mailto:support@bcmanagement.us'}>
+                        <a href={'mailto:support@bcmanagement.us'}>
                             <p className={`text-[#F4844C] text-start ${inter.className} text-[18px]/[27px] font-normal capitalize flex items-center justify-start gap-2`}>
                             <span>
                             <Image src="/images/mail-orange.svg" height={24} width={24} alt='' />
                             </span>
                             support@bcmanagement.us
                             </p>
-                        </Link>
+                        </a>
                     </div>
                 </div>
             </div>
