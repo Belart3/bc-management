@@ -25,6 +25,7 @@ export default async function Page({ params }: { params: Promise<{ slug: string 
     if (!blog) {
       return notFound()
     }
+    console.log(blog.image)
 
     const truncateText = ( text: string, textLimit: number ) => {
       const words = text.split('');
@@ -41,7 +42,7 @@ export default async function Page({ params }: { params: Promise<{ slug: string 
             <h4 className={`${inter.className} text-center text-[#666666] text-[14px]/[21px] md:text-[16px]/[24px] font-normal`}>{blog.date}</h4>
             <h1 className={`${inter.className} text-center text-black text-[32px]/[32px] md:text-[53px]/[53px] font-medium`}>{blog.title}</h1>
           </div>
-          <div className={`bg-[url(${blog.image})] bg-center w-full h-[500px] bg-cover`}></div>
+          <div style={{ backgroundImage: `url(${blog.image})` }} className="bg-center w-full h-[500px] bg-cover"></div>
           <div className="flex flex-col gap-12 md:gap-16">
             <p className={`${inter.className} text-[#333333] font-normal text-[16px]/[24px] md:text-[18px]/[27px]`}>
               {blog.content?.introduction}
