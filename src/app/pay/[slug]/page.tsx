@@ -34,16 +34,16 @@ export default async function ProductPage({params}: { params: Promise<{ slug: st
                 <p className={`${inter.className} text-black text-[18px]/[18px] md:text-[20px]/[20px] text-start font-medium`}>
                     To complete your payment using <span className="uppercase" > {wallet.id}</span>, please adhere to the detailed procedure outlined below to guarantee successful activation of your account:
                 </p>
-                <ul className='flex flex-col gap-6 items-start w-full'>
+                <ul className='flex flex-col gap-6 items-start w-full ms-5'>
                     <li className=' list-decimal text-wrap'>
                         <div className="flex flex-col gap-4">
-                            <div className="flex flex-col">
+                            <div className="flex flex-col overflow-hidden">
                                 <p className={`${inter.className} text-wrap text-[16px]/[24px] md:text-[18px]/[27px] font-normal text-[#333333]`}>
                                     Send the cost of your selected package
                                     to this wallet address
                                 </p>
                                 <div className="flex flex-row items-center gap-0.5 w-full max-w-[300px] md:max-w-none flex-wrap">
-                                    <p className={`${inter.className} text-wrap text-[16px]/[24px] md:text-[18px]/[27px] font-bold text-[#333333]`}>
+                                    <p className={`${inter.className} text-wrap text-[16px]/[24px] md:text-[18px]/[27px] font-bold text-[#333333] break-words  max-w-[300px] md:max-w-none`}>
                                         {wallet.address}
                                     </p>
                                     <ClickCopy copyText={wallet.address} />
