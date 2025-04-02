@@ -23,17 +23,17 @@ const page = () => {
                         <h2 className={`${inter.className} text-black text-[22px]/[22px] md:text-[30px]/[30px] text-start font-medium`}>
                             {item.heading}
                         </h2>
-                        <p className={`${inter.className} text-black text-[16px]/[24px] md:text-[18px]/[27px] text-start font-normal`}>
+                        <p className={`${inter.className} text-[#333333] text-[16px]/[24px] md:text-[18px]/[27px] text-start font-normal`}>
                             {item.content}
                         </p>
                         {
                             item.sublist && item.sublist.map((subitem, index) => (
                                 <ul className="flex flex-col ms-5" key={index}>
-                                    <li className={`${inter.className} text-black text-[16px]/[24px] md:text-[18px]/[27px] text-start font-normal`}>
+                                    <li className={`${inter.className} text-[#333333] text-[16px]/[24px] md:text-[18px]/[27px] text-start font-normal`}>
                                     {index + 1 + "." + " "}
                                         {
                                             subitem.heading !== "" && (
-                                                <span className={`${inter.className} text-black text-[16px]/[24px] md:text-[18px]/[27px] text-start font-bold`}>{subitem.heading }</span>
+                                                <span className={`${inter.className} text-[#333333] text-[16px]/[24px] md:text-[18px]/[27px] text-start font-bold`}>{subitem.heading }</span>
                                             )
                                         }
                                     {subitem.content}
