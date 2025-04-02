@@ -48,12 +48,12 @@ const Navbar = () => {
                 </Link>
             </ul>
             <ul className='hidden flex-row items-center gap-x-2 xl:gap-x-6 lg:flex'>
-                <Link href="">
+                <a href="https://portal.bcmanagement.us/">
                     <li className={`capitalize text-[16px]/[16px] font-medium text-black ${inter.className}`}>
                         become an affiliate
                     </li>
-                </Link>
-                <Link href="/#pricing" scroll={false}>
+                </a>
+                <Link href="/#pricing">
                     <button className={`capitalize text-[16px]/[16px] font-normal text-white bg-[#F4844C] rounded-2xl px-6 py-4 ${inter.className} cursor-pointer`}>
                         get started
                     </button>

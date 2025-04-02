@@ -21,11 +21,11 @@ const Footer = () => {
                 <p className={`text-black text-center md:text-start ${inter.className} text-[14px]/[21px] md:text-[16px]/[24px] font-normal`}>
                     At JMG HandyMan Services, we take pride in delivering reliable, efficient, and high-quality handyman services to homeowners and businesses alike. No project is too big or too small.
                 </p>
-                <div className="flex flex-row gap-10">
+                {/* <div className="flex flex-row gap-10">
                     <Image src="/images/facebook.svg" height={24} width={24} alt="" />
                     <Image src="/images/instagram.svg" height={24} width={24} alt="" />
                     <Image src="/images/tiktok.svg" height={24} width={24} alt="" />
-                </div>
+                </div> */}
             </div>
             
             <ul className="flex flex-col gap-6 md:gap-3">
@@ -37,21 +37,31 @@ const Footer = () => {
                         Your Problems
                     </li>
                 </Link>
-                <li className={`text-[#666666] text-center md:text-start ${inter.className} text-[14px]/[21px] md:text-[16px/[24px]] font-normal capitalize`}>
-                    Our Solution
-                </li>
-                <li className={`text-[#666666] text-center md:text-start ${inter.className} text-[14px]/[21px] md:text-[16px/[24px]] font-normal capitalize`}>
-                    Testimonials
-                </li>
-                <li className={`text-[#666666] text-center md:text-start ${inter.className} text-[14px]/[21px] md:text-[16px/[24px]] font-normal capitalize`}>
-                    Pricing Plan
-                </li>
-                <li className={`text-[#666666] text-center md:text-start ${inter.className} text-[14px]/[21px] md:text-[16px/[24px]] font-normal capitalize`}>
-                    Terms & Conditions
-                </li>
-                <li className={`text-[#666666] text-center md:text-start ${inter.className} text-[14px]/[21px] md:text-[16px/[24px]] font-normal capitalize`}>
-                    Privacy Policy
-                </li>
+                <Link href={'/#problems'}>
+                    <li className={`text-[#666666] text-center md:text-start ${inter.className} text-[14px]/[21px] md:text-[16px/[24px]] font-normal capitalize`}>
+                        Our Solution
+                    </li>
+                </Link>
+                <Link href={'/#testimonials'}>
+                    <li className={`text-[#666666] text-center md:text-start ${inter.className} text-[14px]/[21px] md:text-[16px/[24px]] font-normal capitalize`}>
+                        Testimonials
+                    </li>
+                </Link>
+                <Link href={'/#pricing'}>
+                    <li className={`text-[#666666] text-center md:text-start ${inter.className} text-[14px]/[21px] md:text-[16px/[24px]] font-normal capitalize`}>
+                        Pricing Plan
+                    </li>
+                </Link>
+                <Link href={'/terms-and-conditions'}>
+                    <li className={`text-[#666666] text-center md:text-start ${inter.className} text-[14px]/[21px] md:text-[16px/[24px]] font-normal capitalize`}>
+                        Terms & Conditions
+                    </li>
+                </Link>
+                <Link href={'/privacy-policy'}>
+                    <li className={`text-[#666666] text-center md:text-start ${inter.className} text-[14px]/[21px] md:text-[16px/[24px]] font-normal capitalize`}>
+                        Privacy Policy
+                    </li>
+                </Link>
             </ul>
 
             <ul className="flex flex-col gap-6 md:gap-3">

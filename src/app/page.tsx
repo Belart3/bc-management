@@ -58,9 +58,11 @@ export default function Home() {
             </p>
           </div>
           <div className="flex items-center justify-center">
-            <button className={`capitalize text-white text-[16px]/[16px] ${inter.className} rounded-2xl bg-[#F4844C] px-6 py-4 w-full sm:w-fit max-w-[300px]`}>
-              get started
-            </button>
+            <a href="#pricing" className="w-fit">
+              <button className={`capitalize text-white text-[16px]/[16px] ${inter.className} rounded-2xl bg-[#F4844C] px-6 py-4 w-full sm:w-fit max-w-[300px] cursor-pointer`}>
+                get started
+              </button>
+            </a>
           </div>
         </div>
         <div className="flex  flex-row items-center justify-center space-x-2 w-fit relative left-[50%] md:left-[75%] lg:left-[65%] translate-x-[-50%] ">
@@ -131,7 +133,7 @@ export default function Home() {
             </AnimatePresence>
           </div>
         </SectionWrapper>
-        <motion.div className="py-11 px-5 md:px-10 md:py-12 lg:py-19 lg:px-[115px] bg-[url(/images/testimonial-bg-mobile.svg)] md:bg-[url(/images/testimonial-bg-tablet.svg)] lg:bg-[url(/images/testimonial-bg-desktop.svg)] bg-cover bg-no-repeat bg-center rounded-lg md:rounded-2xl mb-[104px] md:mb-[168px] animate-grow">
+        <motion.div className="py-11 px-5 md:px-10 md:py-12 lg:py-19 lg:px-[115px] bg-[url(/images/testimonial-bg-mobile.svg)] md:bg-[url(/images/testimonial-bg-tablet.svg)] lg:bg-[url(/images/testimonial-bg-desktop.svg)] bg-cover bg-no-repeat bg-center rounded-lg md:rounded-2xl mb-[104px] md:mb-[168px] animate-grow"id="testimonials">
           <div className="flex flex-col gap-12 md:gap-16 items-start md:items-center max-w-[1360px] mx-auto">
             <h2 className={`${inter.className} text-[32px]/[32px] md:text-[53px]/[53px] font-medium text-start md:text-center text-white`}>
               Accurate taxes. <br className="md:hidden" />
@@ -162,8 +164,8 @@ export default function Home() {
             {
               features.map((feature) => (
                 <div className="flex flex-col gap-6 md:gap-8 lg:gap-16 md:flex-row md:even:flex-row-reverse items-center max-w-[500px] lg:max-w-none mx-auto w-full" key={feature.id}>
-                  <div className="flex items-center justify-center py-8 px-2 md:px-[38px] md:py-[38px] lg:py-15 lg:px-[30px] rounded-lg md:rounded-2xl bg-[#E6E6E666] h-60 md:h-100 w-full lg:w-3/5">
-                    <Image src={feature.image} height={150} width={300} alt="" className="md:h-full md:w-full" />
+                  <div className="flex items-center justify-center rounded-lg md:rounded-2xl bg-[#E6E6E666] h-60 md:h-100 w-full lg:w-3/5">
+                    <div className="h-[90%] w-[90%] bg-cover bg-center bg-no-repeat" style={{ backgroundImage: `url(${feature.image})` }} ></div>
                   </div>
                   <div className="gap-4 flex flex-col w-full lg:w-2/5">
                     <h3 className={`${inter.className} text-[22px]/[22px] md:text-[29px]/[29px] font-medium text-start sm:text-start capitalize text-black`}>
@@ -227,10 +229,12 @@ export default function Home() {
               Still Got Questions? <br />
               Book a Free 15 minutes Consultation.
             </h2>
-            <button className={`px-6 py-4 bg-[#F4844C] rounded-2xl flex flex-row gap-2 items-center text-white text-[16px]/[16px] capitalize font-medium ${inter.className} w-full sm:w-fit max-w-[300px]`}>
-              <Image src="./images/phone.svg" height={24} width={24} alt="" />
-              book your free consultation
-            </button>
+            <a href="https://app.bcmanagement.us/widget/groups/bcmcalendar" target="_blank" className="w-fit">
+              <button className={`px-6 py-4 bg-[#F4844C] rounded-2xl flex flex-row gap-2 items-center text-white text-[16px]/[16px] capitalize font-medium ${inter.className} w-full sm:w-fit max-w-[300px] cursor-pointer`}>
+                <Image src="./images/phone.svg" height={24} width={24} alt="" />
+                book your free consultation
+              </button>
+            </a>
           </div>
         </div>
       </main>
