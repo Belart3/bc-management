@@ -28,7 +28,7 @@ const page = () => {
                         </p>
                         {
                             item.sublist && item.sublist.map((subitem, index) => (
-                                <ul className="flex flex-col ms-5">
+                                <ul className="flex flex-col ms-5" key={index}>
                                     <li className={`${inter.className} text-black text-[16px]/[24px] md:text-[18px]/[27px] text-start font-normal`}>
                                     {index + 1 + "." + " "}
                                         {
