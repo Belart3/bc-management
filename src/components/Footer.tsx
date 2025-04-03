@@ -19,7 +19,7 @@ const Footer = () => {
                     <Image src="/logo.svg" height={40} width={120} alt="" />
                 </Link>
                 <p className={`text-black text-center md:text-start ${inter.className} text-[14px]/[21px] md:text-[16px]/[24px] font-normal`}>
-                    At JMG HandyMan Services, we take pride in delivering reliable, efficient, and high-quality handyman services to homeowners and businesses alike. No project is too big or too small.
+                    We are experts in cryptocurrency taxation, dedicated to addressing the specific requirements of meme coin traders. Our knowledgeable team expertly navigates the intricate landscape of crypto transactions and regulations to deliver customized tax solutions.
                 </p>
                 {/* <div className="flex flex-row gap-10">
                     <Image src="/images/facebook.svg" height={24} width={24} alt="" />

@@ -1,0 +1,17 @@
+[
+    {
+        "name": "Cade O’Neil",
+        "position": "CEO",
+        "image": "/images/Cade-O’Neil.png"
+    },
+    {
+        "name": "Zach Humphries",
+        "position": "CMO",
+        "image": "/images/Zach-Humphries.jpg"
+    },
+    {
+        "name": "Joshua Tsegba",
+        "position": "CTO",
+        "image": "/images/Joshua-Tsegba.png"
+    }
+]

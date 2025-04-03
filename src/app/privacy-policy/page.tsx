@@ -8,7 +8,7 @@ const inter = Inter({
 });
 
 
-const page = () => {
+const privacPolicy = () => {
   return (
     <div className='mt-[140px] md:mt-[216px] lg:mt-[224px] flex flex-col md:max-w-[600px] lg:max-w-[1130px] mx-auto mb-16 md:mb-26 gap-16 md:gap-[104px]'>
         <div className="">
@@ -51,4 +51,4 @@ const page = () => {
   )
 }
 
-export default page
+export default privacyPolicy

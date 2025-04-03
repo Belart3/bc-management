@@ -31,7 +31,7 @@ const Navbar = () => {
                         our solution
                     </li>
                 </Link>
-                <Link href="">
+                <Link href="/about">
                     <li className={`capitalize text-[16px]/[16px] font-normal text-black ${inter.className}`}>
                         about us
                     </li>
