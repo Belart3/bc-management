@@ -2,6 +2,7 @@ import { Inter } from 'next/font/google';
 import React from 'react'
 import team from '@/data/team.json'
 import Image from 'next/image';
+import TeamSwiper from '@/components/TeamSwiper';
 
 const inter = Inter({
   variable: "--font-inter",
@@ -19,15 +20,17 @@ const about = () => {
                         At BlockChain Management, we specialize in cryptocurrency taxation, focusing on the unique needs of meme coin traders. Our expert team navigates the complexities of crypto transactions and regulations to provide tailored tax solutions. Trust us to help you manage your crypto tax obligations with confidence.
                     </p>
                 </div>
-                <div className="bg-cover bg-no-repeat bg-top bg-[url('/images/about-BCM.png')] h-70 md:h-80 w-full"></div>
+                <div className="bg-cover bg-no-repeat bg-top bg-[url('/images/about-BCM.png')] h-70 md:h-100 w-full"></div>
             </div>
 
             <div className="flex flex-col gap-10 md:gap-16">
-                <h2 className={`${inter.className} capitalize text-[32px]/[32px] md:text-[53px]/[53px] font-medium text-black`}>Meet Our Team.​</h2>
-                <div className="flex flex-col sm:flex-row gap-4 items-center justify-center md:items-center md:justify-between overflow-scroll">
+                <h2 className={`${inter.className} capitalize text-[32px]/[32px] md:text-[53px]/[53px] font-medium text-black`}>
+                Meet Our Team 
+                </h2>
+                <div className="flex sm:hidden lg:flex flex-col sm:flex-row gap-4 items-center justify-center md:items-center md:justify-between w-full">
                     {
                         team.map((item,index) => (
-                            <div className="p-3 rounded-2xl flex items-end justify-center h-85 md:h-90 md:w-95 w-full max-w-[350px] shrink-0 md:max-w-none bg-top bg-cover bg-no-repeat" style={{backgroundImage: `url(${item.image})`}} key={index}>
+                            <div className="p-3 rounded-2xl flex items-end justify-center h-85 md:w-[32%] w-full max-w-[350px] shrink-0 md:max-w-none bg-top bg-cover bg-no-repeat" style={{backgroundImage: `url(${item.image})`}} key={index}>
                                 <div className="flex flex-col gap-3 items-center justify-center bg-[#000000]/50 w-full rounded-2xl backdrop-blur-[10px] p-2">
                                     <h3 className={`${inter.className} capitalize text-[22px]/[22px] md:text-[30px]/[30px] font-medium text-white text-center`}>{item.name}</h3>
                                     <p className={`${inter.className} uppercase text-[18px]/[18px] md:text-[20px]/[20px] font-medium text-[#CCCCCC] text-center`}>{item.position}</p>
@@ -35,6 +38,9 @@ const about = () => {
                             </div>
                         ))
                     }
+                </div>
+                <div className="hidden sm:flex lg:hidden">
+                    <TeamSwiper />
                 </div>
             </div>
 
