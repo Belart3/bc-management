@@ -26,10 +26,12 @@ const PricingSection = () => {
                     </p>
                   </div>
                   <div className="flex flex-col gap-3">
-                    <button className={`py-4 px-6 bg-white rounded-2xl gap-2 flex flex-row items-center justify-center capitalize font-medium text-[16px]/[16px] text-[#F4844C] ${inter.className} `}>
-                      <Image src="./images/pay-with-card.svg" height={24} width={24} alt="" />
-                      pay with card
-                    </button>
+                    <a href="https://pay.bcmanagement.us/advanced-plan" className="w-full">
+                      <button className={`py-4 px-6 bg-white rounded-2xl gap-2 flex flex-row items-center justify-center capitalize font-medium text-[16px]/[16px] text-[#F4844C] ${inter.className} cursor-pointer w-full`}>
+                        <Image src="./images/pay-with-card.svg" height={24} width={24} alt="" />
+                        pay with card
+                      </button>
+                    </a>
                     <p className={`${inter.className} text-[#E6E6E6] text-[16px]/[16px] font-medium text-center capitalize`}>Or</p>
                     <PriceMenu />
                   </div>
@@ -65,10 +67,12 @@ const PricingSection = () => {
                   </p>
                 </div>
                 <div className="flex flex-col gap-3">
-                  <button className={`py-4 px-6 bg-white rounded-2xl gap-2 flex flex-row items-center justify-center capitalize text-[16px]/[16px] text-[#F4844C] border border-[#F4844C] ${inter.className} font-medium`}>
-                    <Image src="./images/pay-with-card.svg" height={24} width={24} alt="" />
-                    pay with card
-                  </button>
+                  <a href="https://pay.bcmanagement.us/basic-plan" className="w-full">
+                    <button className={`py-4 px-6 bg-white rounded-2xl gap-2 flex flex-row items-center justify-center capitalize text-[16px]/[16px] text-[#F4844C] border border-[#F4844C] ${inter.className} font-medium cursor-pointer w-full`}>
+                      <Image src="./images/pay-with-card.svg" height={24} width={24} alt="" />
+                      pay with card
+                    </button>
+                  </a>
                   <p className={`${inter.className} text-[#666666] text-[16px]/[16px] font-medium text-center capitalize`}>Or</p>
                   <PriceMenu />
                 </div>
@@ -100,10 +104,12 @@ const PricingSection = () => {
                   </p>
                 </div>
                 <div className="flex flex-col gap-3">
-                  <button className={`py-4 px-6 bg-white rounded-2xl gap-2 flex flex-row items-center justify-center capitalize text-[16px]/[16px] text-[#F4844C] border border-[#F4844C] ${inter.className} font-medium`}>
-                    <Image src="./images/pay-with-card.svg" height={24} width={24} alt="" />
-                    pay with card
-                  </button>
+                  <a href="https://pay.bcmanagement.us/standard-plan" className="w-full">
+                    <button className={`py-4 px-6 bg-white rounded-2xl gap-2 flex flex-row items-center justify-center capitalize text-[16px]/[16px] text-[#F4844C] border border-[#F4844C] ${inter.className} font-medium cursor-pointer w-full`}>
+                      <Image src="./images/pay-with-card.svg" height={24} width={24} alt="" />
+                      pay with card
+                    </button>
+                  </a>
                   <p className={`${inter.className} text-[#666666] text-[16px]/[16px] font-medium text-center capitalize`}>Or</p>
                   <PriceMenu />
                 </div>
