@@ -3,6 +3,13 @@ import React from 'react'
 import team from '@/data/team.json'
 import Image from 'next/image';
 import TeamSwiper from '@/components/TeamSwiper';
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+    title: "About Us | Defi Crypto Tax Services - BlockChain Management",
+    description: "Discover BCM’s mission to simplify crypto taxes and maximize your portfolio with expert blockchain and DeFi management services.",
+    keywords: "About BCM, BlockChain Management, crypto tax services, DeFi management, blockchain solutions, crypto portfolio optimization, tax compliance, crypto asset management",
+};
 
 const inter = Inter({
   variable: "--font-inter",

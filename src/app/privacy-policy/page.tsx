@@ -1,6 +1,14 @@
 import { Inter } from 'next/font/google';
 import React from 'react'
 import privacyPolicy from '@/data/privacyPolicy.json'
+import { Metadata } from 'next';
+
+
+export const metadata: Metadata = {
+    title: "Privacy Policy | BlockChain Management",
+    description: "Discover BCM's mission to provide innovative blockchain and DeFi management services. Our expert team is dedicated to simplifying your crypto tax obligations and maximizing your portfolio's potential.",
+    keywords: "BCM privacy policy,Blockchain privacy policy, DeFi management privacy policy, Data privacy blockchain services, Personal data protection in DeFi, Privacy policy for blockchain platform, User privacy in DeFi services, How BCM handles personal data, Privacy terms for blockchain services",
+};
 
 const inter = Inter({
   variable: "--font-inter",

@@ -11,13 +11,12 @@ import features from "@/data/features.json"
 import Script from "next/script";
 import { motion, AnimatePresence } from "framer-motion";
 import PricingSection from "@/components/PricingSection";
+import Head from "next/head";
 
 const inter = Inter({
   variable: "--font-inter",
   subsets: ["latin"],
 });
-
-
 
 export default function Home() {
   const categories = [
@@ -39,6 +38,12 @@ export default function Home() {
   const issues = filteredProblems(selectedCategory)
   return (
     <>
+      <Head>
+        <title>Defi crypto tax services and Defi blockchain tax management</title>
+        <meta name="description" content="With our expert Defi Crypto Tax Services, you can streamline your Defi cryptocurrency tax reporting and Defi Blockchain Asset Management." />
+        <meta name="keywords" content="DeFi cryptocurrency tax reporting, DeFi blockchain asset management, Crypto tax calculations, DeFi tax liability minimization, Crypto portfolio growth strategies, DeFi wallet consolidation" />
+        <link rel="canonical" href="https://bcmanagement.us" />
+      </Head>
       <header className="bg-[#e6e6e620] h-fit md:h-[1200px] lg:h-[1150px] w-full rounded-[12px] md:rounded-[24px] pt-[122px] md:pt-[172px] 
       bg-[url(/header-orange-tint-mobile.svg),_url(/header-grid.svg)] 
       md:bg-[url(/header-orange-tint-tablet.svg),_url(/header-grid.svg)] 

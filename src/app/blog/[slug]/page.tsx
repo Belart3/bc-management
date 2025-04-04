@@ -4,6 +4,8 @@ import { Inter } from 'next/font/google'
 import BlogListItem from '@/components/BlogListItem'
 import blogData from '@/data/blogData.json'
 import Link from 'next/link'
+import { Metadata } from 'next'
+
 
 const inter = Inter(
   { 
@@ -12,12 +14,18 @@ const inter = Inter(
   }
 )
 
-
 export async function generateStaticParams() {
   return blogs.map((b) => ({
       slug: b.url.toLowerCase(),
   }))
 }
+
+
+export const metadata: Metadata = {
+  title: ``,
+  description: "Discover BCM's mission to provide innovative blockchain and DeFi management services. Our expert team is dedicated to simplifying your crypto tax obligations and maximizing your portfolio's potential.",
+  keywords: "About BCM, BlockChain Management, crypto tax services, DeFi management, blockchain solutions, crypto portfolio optimization, tax compliance, crypto asset management",
+};
 
 export default async function Page({ params }: { params: Promise<{ slug: string }> }) {
     const {slug} = await params
@@ -25,7 +33,6 @@ export default async function Page({ params }: { params: Promise<{ slug: string 
     if (!blog) {
       return notFound()
     }
-    console.log(blog.image)
 
     const truncateText = ( text: string, textLimit: number ) => {
       const words = text.split('');

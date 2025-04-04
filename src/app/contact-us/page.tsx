@@ -2,6 +2,14 @@ import React from 'react'
 import { Inter } from 'next/font/google'
 import Image from 'next/image';
 import Link from 'next/link';
+import { Metadata } from 'next';
+
+
+export const metadata: Metadata = {
+  title: "Contact Us | BlockChain Management",
+  description: "Contact BCM for expert blockchain and DeFi support. We're here to help with crypto tax, portfolio management, and personalized solutions.",
+  keywords: "Contact BCM, Blockchain support, DeFi support services, Crypto tax help, Contact DeFi experts, Portfolio management assistance, Crypto financial services, Blockchain consulting, Get in touch with BCM, DeFi management solutions, Blockchain inquiries, Crypto portfolio support, Blockchain management contact, DeFi consulting services, Crypto tax assistance, Blockchain financial solutions, BCM contact information",
+};
 
 const inter = Inter({
   variable: "--font-inter",

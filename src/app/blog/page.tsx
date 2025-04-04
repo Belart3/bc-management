@@ -2,11 +2,18 @@ import React from 'react'
 import { Inter } from 'next/font/google';
 import blogData from "@/data/blogData.json"
 import Link from 'next/link';
+import { Metadata } from 'next';
 
 const inter = Inter({
   variable: "--font-inter",
   subsets: ["latin"],
 });
+
+export const metadata: Metadata = {
+    title: "Blockchain and DeFi Financial Strategies (BCM Blog)",
+    description: "Stay informed with BCM’s blog—expert insights on blockchain, DeFi, and finance. Learn to reduce liability and maximize deductions.",
+    keywords: "Optimize crypto wealth, Blockchain tax efficiency, DeFi investment strategies, Crypto wealth optimization, Tax-efficient blockchain strategies, Maximize DeFi Crypto profits, Long-term crypto growth, Blockchain risk management, DeFi financial planning, Crypto tax and wealth strategies, BCM blog, Blockchain Management blog, BCM insights, Crypto tax strategies, DeFi investment insights",
+};
 
 
 const Blog = () => {
@@ -32,12 +39,12 @@ const Blog = () => {
                             <div className="flex flex-col">
                                 <div className="h-30 md:h-53 w-full bg-cover bg-no-repeat bg-center bg-[url('/images/blogs/How-To-Master-Blockchain-Management-Accurate-Tax-Calculations-Made-Easy.png')] rounded-t-lg" style={{backgroundImage: `url(${blog.image})`}}></div>
                                 <div className="flex flex-col p-3 md:p-5 gap-2 md:gap-4">
-                                    <p className={`${inter.className} text-[#F4844C] text-start text-[12px]/[12px] md:text-[16px]/[24px] font-normal capitalize`}>
+                                    <h3 className={`${inter.className} text-[#F4844C] text-start text-[12px]/[12px] md:text-[16px]/[24px] font-normal capitalize`}>
                                         {blog.date}
-                                    </p>
-                                    <p className={`${inter.className} text-black text-start text-[18px]/[24px] md:text-[20px]/[26px] font-medium capitalize transition-colors ease-in-out duration-300 lg:group-hover:text-[#F4844C]`}>
+                                    </h3>
+                                    <h2 className={`${inter.className} text-black text-start text-[18px]/[24px] md:text-[20px]/[26px] font-medium capitalize transition-colors ease-in-out duration-300 lg:group-hover:text-[#F4844C]`}>
                                         {truncateText(blog.title, 60)}
-                                    </p>
+                                    </h2>
                                 </div>
                             </div>
                         </Link>
