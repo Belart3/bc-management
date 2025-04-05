@@ -3,49 +3,57 @@
         "id": 1,
         "title": "Overpaying Taxes",
         "paragpraph": "Missing key deductions from trades, staking, and air-drops means you're giving away money unnecessarily.",
-        "category": "your problem"
+        "category": "your problem",
+        "image": "/images/taxes.svg"
     },
     {
         "id": 2,
         "title": "Disorganized Records",
         "paragpraph": "Without proper tracking, staying audit-ready or calculating profits is almost impossible.",
-        "category": "your problem"
+        "category": "your problem",
+        "image": "/images/records.svg"
     },
     {
         "id": 3,
         "title": "Complex Wallets",
         "paragpraph": "Juggling multiple wallets and DeFi platforms makes it difficult to get a clear picture of your finances.",
-        "category": "your problem"
+        "category": "your problem",
+        "image": "/images/wallet.svg"
     },
     {
         "id": 4,
         "title": "Unclear Cost Basis",
         "paragpraph": "Most tools fail to calculate accurate cost basis, leaving you vulnerable to overpaying taxes.",
-        "category": "your problem"
+        "category": "your problem",
+        "image": "/images/cost-basis.svg"
     },
     {
         "id": 5,
         "title": "Accurate Tax Calculations",
         "paragpraph": "Ensure every trade, token, and staking reward is logged correctly to minimize your tax liability.",
-        "category": "our solution"
+        "category": "our solution",
+        "image": "/images/taxes.svg"
     },
     {
         "id": 6,
         "title": "Comprehensive Reports",
         "paragpraph": "Receive clear, audit-ready summaries of all your crypto activities, tailored for easy filing.",
-        "category": "our solution"
+        "category": "our solution",
+        "image": "/images/taxes.svg"
     },
     {
         "id": 7,
         "title": "Wallet Consolidation",
         "paragpraph": "Manage all your wallets, DeFi platforms, and transactions in one organized system.",
-        "category": "our solution"
+        "category": "our solution",
+        "image": "/images/taxes.svg"
     },
     {
         "id": 8,
         "title": "Transparent Cost Basis",
         "paragpraph": "We calculate both actual and initial cost basis, so you can maximize deductions with confidence.",
-        "category": "our solution"
+        "category": "our solution",
+        "image": "/images/taxes.svg"
     }
     
 ]

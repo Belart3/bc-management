@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import Popup from "@/components/Popup";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -23,12 +24,13 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className=" mt-[10px] md:mt-5 scroll-smooth"
+        className=" pt-[10px] md:pt-5 scroll-smooth relative"
       >
         <div className={`${inter.variable} antialiased mx-5 lg:mx-10 bg-white relative`}>
           <Navbar />
           {children}
         </div>
+        <Popup />
         <Footer />
       </body>
     </html>

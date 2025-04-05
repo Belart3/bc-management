@@ -84,12 +84,6 @@ const Footer = () => {
                         support@bcmanagement.us
                     </li>
                 </Link>
-                <li className={`text-[#666666] text-center ${inter.className} text-[14px]/[21px] font-normal capitalize flex items-center md:justify-start justify-center gap-2`}>
-                    <span>
-                        <Image src="/images/location.svg" height={24} width={24} alt='' />
-                    </span>
-                    Address
-                </li>
             </ul>
         </div>
         <div className=" max-w-[1130px] mx-auto h-px w-full bg-[#E6E6E6]"></div>

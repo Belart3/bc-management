@@ -86,7 +86,6 @@ export default function Home() {
                 <div className="bg-black h-full w-full rounded-[6px]">
                   <video playsInline controls loop preload="none" className="h-full w-full rounded-sm md:rounded-lg" >
                     <source src="/videos/Defi crypto tax services and Defi blockchain tax management.mp4" type="video/mp4" className=" " />
-                    Your browser does not support the video tag.
                   </video>
                 </div>
               </div>
@@ -125,7 +124,7 @@ export default function Home() {
                   animate={{ opacity: 1, y: 0 }}
                   exit={{ opacity: 0, y: 50 }} // Prevents lingering elements
                   transition={{ duration: 0.3 }}
-                  >
+                  ><Image src={issue.image} height={24} width={24} alt={issue.title + " image"} className="" />
                   <h3 className={`${inter.className} text-[18px]/[18px] sm:text-[20px]/[20px] font-medium text-center sm:text-start capitalize text-black`}>
                     {issue.title}
                   </h3>
@@ -165,10 +164,10 @@ export default function Home() {
         </motion.div>
         <SectionWrapper>
           <SectionTitle title="What Makes Us Different?" />
-          <div className="flex flex-col gap-10 lg:gap-16 max-w-[1130px] mx-auto">
+          <div className="flex flex-col gap-10 lg:gap-16 mx-auto">
             {
               features.map((feature) => (
-                <div className="flex flex-col gap-6 md:gap-8 lg:gap-16 md:flex-row md:even:flex-row-reverse items-center max-w-[500px] lg:max-w-none mx-auto w-full" key={feature.id}>
+                <div className="flex flex-col gap-6 md:gap-8 lg:gap-16 md:flex-row md:even:flex-row-reverse items-center max-w-[500px] md:max-w-none mx-auto w-full" key={feature.id}>
                   <div className="flex items-center justify-center rounded-lg md:rounded-2xl bg-[#E6E6E666] h-60 md:h-100 w-full lg:w-3/5">
                     <div className="h-[90%] w-[90%] bg-cover bg-center bg-no-repeat" style={{ backgroundImage: `url(${feature.image})` }} ></div>
                   </div>
