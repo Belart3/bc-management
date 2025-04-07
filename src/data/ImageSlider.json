@@ -1,0 +1,23 @@
+[
+    {
+        "image": "./images/xrp.svg"
+    },
+    {
+        "image": "./images/btc.svg"
+    },
+    {
+        "image": "./images/eth.svg"
+    },
+    {
+        "image": "./images/shib.svg"
+    },
+    {
+        "image": "./images/sol.svg"
+    },
+    {
+        "image": "./images/bnb.svg"
+    },
+    {
+        "image": "./images/polkadot.svg"
+    }
+]

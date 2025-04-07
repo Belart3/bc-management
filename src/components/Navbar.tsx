@@ -22,34 +22,34 @@ const Navbar = () => {
             </Link>
             <ul className='hidden flex-row items-center gap-x-2 xl:gap-x-6 lg:flex'>
                 <Link href="/#problems">
-                    <li className={`capitalize text-[16px]/[16px] font-normal text-black ${inter.className}`}>
+                    <li className={`capitalize text-[16px]/[16px] font-normal text-black transition-all ease-in-out duration-150 hover:text-[#F4844C] ${inter.className}`}>
                         your problem
                     </li>
                 </Link>
                 <Link href="/#problems">
-                    <li className={`capitalize text-[16px]/[16px] font-normal text-black ${inter.className}`}>
+                    <li className={`capitalize text-[16px]/[16px] font-normal text-black transition-all ease-in-out duration-150 hover:text-[#F4844C] ${inter.className}`}>
                         our solution
                     </li>
                 </Link>
                 <Link href="/about">
-                    <li className={`capitalize text-[16px]/[16px] font-normal text-black ${inter.className}`}>
+                    <li className={`capitalize text-[16px]/[16px] font-normal text-black transition-all ease-in-out duration-150 hover:text-[#F4844C] ${inter.className}`}>
                         about us
                     </li>
                 </Link>
                 <Link href="/contact-us">
-                    <li className={`capitalize text-[16px]/[16px] font-normal text-black ${inter.className}`}>
+                    <li className={`capitalize text-[16px]/[16px] font-normal text-black transition-all ease-in-out duration-150 hover:text-[#F4844C] ${inter.className}`}>
                         contact us
                     </li>
                 </Link>
                 <Link href="/blog">
-                    <li className={`capitalize text-[16px]/[16px] font-normal text-black ${inter.className}`}>
+                    <li className={`capitalize text-[16px]/[16px] font-normal text-black transition-all ease-in-out duration-150 hover:text-[#F4844C] ${inter.className}`}>
                         blog
                     </li>
                 </Link>
             </ul>
             <ul className='hidden flex-row items-center gap-x-2 xl:gap-x-6 lg:flex'>
                 <a href="https://portal.bcmanagement.us/">
-                    <li className={`capitalize text-[16px]/[16px] font-medium text-black ${inter.className}`}>
+                    <li className={`capitalize text-[16px]/[16px] font-medium text-black transition-all ease-in-out duration-150 hover:text-[#F4844C] ${inter.className}`}>
                         become an affiliate
                     </li>
                 </a>

@@ -38,12 +38,6 @@ export default function Home() {
   const issues = filteredProblems(selectedCategory)
   return (
     <>
-      <Head>
-        <title>Defi crypto tax services and Defi blockchain tax management</title>
-        <meta name="description" content="With our expert Defi Crypto Tax Services, you can streamline your Defi cryptocurrency tax reporting and Defi Blockchain Asset Management." />
-        <meta name="keywords" content="DeFi cryptocurrency tax reporting, DeFi blockchain asset management, Crypto tax calculations, DeFi tax liability minimization, Crypto portfolio growth strategies, DeFi wallet consolidation" />
-        <link rel="canonical" href="https://bcmanagement.us" />
-      </Head>
       <header className="bg-[#e6e6e620] h-fit md:h-[1200px] lg:h-[1150px] w-full rounded-[12px] md:rounded-[24px] pt-[122px] md:pt-[172px] 
       bg-[url(/header-orange-tint-mobile.svg),_url(/header-grid.svg)] 
       md:bg-[url(/header-orange-tint-tablet.svg),_url(/header-grid.svg)] 
@@ -84,8 +78,9 @@ export default function Home() {
             <div className="h-[calc(100%-4px)] w-[calc(100%-4px)] backdrop-blur-[10px] rounded-[10px] bg-gray-100">
               <div className="h-full w-full backdrop-blur-[10px] rounded-[10px] bg-[#00000080] mx-auto my-auto p-1 md:p-2 border-[4px] border-[#F4844C60]">
                 <div className="bg-black h-full w-full rounded-[6px]">
-                  <video playsInline controls loop preload="none" className="h-full w-full rounded-sm md:rounded-lg" >
+                  <video playsInline autoPlay controls loop preload="none" className="h-auto w-full rounded-sm md:rounded-lg" >
                     <source src="/videos/Defi crypto tax services and Defi blockchain tax management.mp4" type="video/mp4" className=" " />
+                    Your browser does not support the video tag.
                   </video>
                 </div>
               </div>
@@ -122,15 +117,17 @@ export default function Home() {
                   layout // Ensures smooth reflow of elements
                   initial={{ opacity: 0, y: 50 }}
                   animate={{ opacity: 1, y: 0 }}
-                  exit={{ opacity: 0, y: 50 }} // Prevents lingering elements
+                  exit={{ opacity: 0, y: 50 }}
                   transition={{ duration: 0.3 }}
-                  ><Image src={issue.image} height={24} width={24} alt={issue.title + " image"} className="" />
-                  <h3 className={`${inter.className} text-[18px]/[18px] sm:text-[20px]/[20px] font-medium text-center sm:text-start capitalize text-black`}>
-                    {issue.title}
-                  </h3>
-                  <p className={`${inter.className} text-[#333333] font-normal text-[14px]/[21px] sm:text-[16px]/[24px] text-center sm:text-start`}>
-                    {issue.paragpraph}
-                  </p>
+                  ><Image src={issue.image} height={40} width={40} alt={issue.title + " image"} className="size-6 md:size-10" />
+                  <div className="flex flex-col gap-4 items-center sm:items-start">
+                    <h3 className={`${inter.className} text-[18px]/[18px] sm:text-[20px]/[20px] font-medium text-center sm:text-start capitalize text-black`}>
+                      {issue.title}
+                    </h3>
+                    <p className={`${inter.className} text-[#333333] font-normal text-[14px]/[21px] sm:text-[16px]/[24px] text-center sm:text-start`}>
+                      {issue.paragpraph}
+                    </p>
+                  </div>
                 </motion.div>
               ))
             }

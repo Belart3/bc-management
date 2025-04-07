@@ -32,28 +32,28 @@
         "title": "Accurate Tax Calculations",
         "paragpraph": "Ensure every trade, token, and staking reward is logged correctly to minimize your tax liability.",
         "category": "our solution",
-        "image": "/images/taxes.svg"
+        "image": "/images/accurate-taxes.svg"
     },
     {
         "id": 6,
         "title": "Comprehensive Reports",
         "paragpraph": "Receive clear, audit-ready summaries of all your crypto activities, tailored for easy filing.",
         "category": "our solution",
-        "image": "/images/taxes.svg"
+        "image": "/images/comprehensive-reports.svg"
     },
     {
         "id": 7,
         "title": "Wallet Consolidation",
         "paragpraph": "Manage all your wallets, DeFi platforms, and transactions in one organized system.",
         "category": "our solution",
-        "image": "/images/taxes.svg"
+        "image": "/images/wallet-consolidation.svg"
     },
     {
         "id": 8,
         "title": "Transparent Cost Basis",
         "paragpraph": "We calculate both actual and initial cost basis, so you can maximize deductions with confidence.",
         "category": "our solution",
-        "image": "/images/taxes.svg"
+        "image": "/images/transparent-cost-basis.svg"
     }
     
 ]
