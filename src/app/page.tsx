@@ -11,7 +11,6 @@ import features from "@/data/features.json"
 import Script from "next/script";
 import { motion, AnimatePresence } from "framer-motion";
 import PricingSection from "@/components/PricingSection";
-import Head from "next/head";
 
 const inter = Inter({
   variable: "--font-inter",
