@@ -77,7 +77,7 @@ export default function Home() {
             <div className="h-[calc(100%-4px)] w-[calc(100%-4px)] backdrop-blur-[10px] rounded-[10px] bg-gray-100">
               <div className="h-full w-full backdrop-blur-[10px] rounded-[10px] bg-[#00000080] mx-auto my-auto p-1 md:p-2 border-[4px] border-[#F4844C60]">
                 <div className="bg-black h-full w-full rounded-[6px]">
-                  <video playsInline autoPlay controls loop preload="none" className="h-auto w-full rounded-sm md:rounded-lg" >
+                  <video playsInline autoPlay controls loop preload="none" className="h-full w-full rounded-sm md:rounded-lg" >
                     <source src="/videos/Defi crypto tax services and Defi blockchain tax management.mp4" type="video/mp4" className=" " />
                     Your browser does not support the video tag.
                   </video>
