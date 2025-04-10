@@ -11,6 +11,7 @@ import features from "@/data/features.json"
 import Script from "next/script";
 import { motion, AnimatePresence } from "framer-motion";
 import PricingSection from "@/components/PricingSection";
+import Link from "next/link";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -56,11 +57,13 @@ export default function Home() {
             </p>
           </div>
           <div className="flex items-center justify-center">
-            <a href="#pricing" className="w-fit">
-              <button className={`capitalize text-white text-[16px]/[16px] ${inter.className} rounded-2xl bg-[#F4844C] px-6 py-4 w-full sm:w-fit max-w-[300px] cursor-pointer`}>
-                get started
+            <Link href="/#pricing">
+              <button className={`capitalize text-[16px]/[16px] font-normal text-white bg-[#F4844C] rounded-2xl px-6 py-4 ${inter.className} cursor-pointer relative group overflow-hidden z-20
+              `}>
+                  <span className='absolute h-full w-0 bg-[#fd9c6c] top-0 left-0 rounded-2xl group-hover:w-full transition-all duration-300 -z-[2]'></span>
+                  get started
               </button>
-            </a>
+            </Link>
           </div>
         </div>
         <div className="flex  flex-row items-center justify-center space-x-2 w-fit relative left-[50%] md:left-[75%] lg:left-[65%] translate-x-[-50%] ">
@@ -133,7 +136,7 @@ export default function Home() {
             </AnimatePresence>
           </div>
         </SectionWrapper>
-        <motion.div className="py-11 px-5 md:px-10 md:py-12 lg:py-19 lg:px-[115px] bg-[url(/images/testimonial-bg-mobile.svg)] md:bg-[url(/images/testimonial-bg-tablet.svg)] lg:bg-[url(/images/testimonial-bg-desktop.svg)] bg-cover bg-no-repeat bg-center rounded-lg md:rounded-2xl mb-[104px] md:mb-[168px] animate-grow"id="testimonials">
+        <div className="py-11 px-5 md:px-10 md:py-12 lg:py-19 lg:px-[115px] bg-[url(/images/testimonial-bg-mobile.svg)] md:bg-[url(/images/testimonial-bg-tablet.svg)] lg:bg-[url(/images/testimonial-bg-desktop.svg)] bg-cover bg-no-repeat bg-center rounded-lg md:rounded-2xl mb-[104px] md:mb-[168px] animate-grow" id="testimonials">
           <div className="flex flex-col gap-12 md:gap-16 items-start md:items-center max-w-[1360px] mx-auto">
             <h2 className={`${inter.className} text-[32px]/[32px] md:text-[53px]/[53px] font-medium text-start md:text-center text-white`}>
               Accurate taxes. <br className="md:hidden" />
@@ -157,7 +160,7 @@ export default function Home() {
             }
             </div>
           </div>
-        </motion.div>
+        </div>
         <SectionWrapper>
           <SectionTitle title="What Makes Us Different?" />
           <div className="flex flex-col gap-10 lg:gap-16 mx-auto">
