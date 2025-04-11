@@ -13,7 +13,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import PricingSection from "@/components/PricingSection";
 import Link from "next/link";
 
-const inter = Inter({
+export const inter = Inter({
   variable: "--font-inter",
   subsets: ["latin"],
 });
@@ -60,7 +60,7 @@ export default function Home() {
             <Link href="/#pricing">
               <button className={`capitalize text-[16px]/[16px] font-normal text-white bg-[#F4844C] rounded-2xl px-6 py-4 ${inter.className} cursor-pointer relative group overflow-hidden z-20
               `}>
-                  <span className='absolute h-full w-0 bg-[#fd9c6c] top-0 left-0 rounded-2xl group-hover:w-full transition-all duration-300 -z-[2]'></span>
+                  <span className='absolute h-full w-0 bg-black top-0 left-0 rounded-2xl group-hover:w-full transition-all duration-300 -z-[2]'></span>
                   get started
               </button>
             </Link>
@@ -233,7 +233,8 @@ export default function Home() {
               Book a Free 15 minutes Consultation.
             </h2>
             <a href="https://app.bcmanagement.us/widget/groups/bcmcalendar" target="_blank" className="w-fit">
-              <button className={`px-6 py-4 bg-[#F4844C] rounded-2xl flex flex-row gap-2 items-center text-white text-[16px]/[16px] capitalize font-medium ${inter.className} w-full sm:w-fit max-w-[300px] cursor-pointer`}>
+              <button className={`px-6 py-4 bg-[#F4844C] rounded-2xl flex flex-row gap-2 items-center text-white text-[16px]/[16px] capitalize font-medium ${inter.className} w-full sm:w-fit max-w-[300px] cursor-pointer relative group overflow-hidden z-20 outline-2 outline-offset-1 outline-[#E6E6E6]`}>
+                <span className='absolute h-full w-0 bg-black top-0 left-0 rounded-2xl group-hover:w-full transition-all duration-300 -z-[2]'></span>
                 <Image src="./images/phone.svg" height={24} width={24} alt="" />
                 book your free consultation
               </button>
