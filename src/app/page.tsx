@@ -13,7 +13,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import PricingSection from "@/components/PricingSection";
 import Link from "next/link";
 
-export const inter = Inter({
+const inter = Inter({
   variable: "--font-inter",
   subsets: ["latin"],
 });
