@@ -226,8 +226,8 @@ export default function Home() {
         h-200 md:h-300 lg:h-150 
         bg-no-repeat bg-[length:contain,auto,cover] bg-[position:bottom,top_center,center] 
         md:bg-no-repeat md:bg-[length:contain,auto,cover] md:bg-[position:bottom_center,center_-20%,center] 
-        lg:bg-[length:auto,auto,cover] lg:bg-[position:bottom_right,-70%_center,center]  2xl:bg-[position:70%_100%,80%_center,center] animate-grow">
-          <div className="flex flex-col justify-start gap-6 px-5 md:px-18 lg:px-0 lg:w-[60%] lg:ms-20 mt-20 lg:my-21 2xl:max-w-[1360px] 2xl:mx-auto ">
+        lg:bg-[length:auto,auto,cover] lg:bg-[position:85%_bottom,-70%_center,center]  2xl:bg-[position:70%_100%,80%_center,center] animate-grow">
+          <div className="flex flex-col justify-center gap-6 px-5 md:px-18 lg:px-0 lg:w-[60%] lg:ms-20 mt-20 lg:my-21 2xl:max-w-[1360px] 2xl:mx-auto ">
             <h2 className={`${inter.className} text-[44px]/[44px] md:text-[73px]/[73px] text-white text-start font-medium 2xl:w-2/3`}>
               Still Got Questions? <br />
               Book a Free 15 minutes Consultation.
