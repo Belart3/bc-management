@@ -56,7 +56,7 @@ const Navbar = () => {
                     </li>
                 </a>
                 <Link href="/#pricing">
-                    <button className={`capitalize text-[16px]/[16px] font-normal text-white bg-[#F4844C] rounded-2xl px-6 py-4 ${inter.className} cursor-pointer relative group overflow-hidden z-20
+                    <button className={`capitalize text-[16px]/[16px] font-normal text-white bg-[#F4844C] rounded-2xl px-6 py-4 ${inter.className} cursor-pointer relative group overflow-hidden z-20 hover:outline-2 hover:outline-offset-1 hover:outline-[#E6E6E6]/40
                     `}>
                         <span className='absolute h-full w-0 bg-[black] top-0 left-0 rounded-2xl group-hover:w-full transition-all duration-300 -z-[2]'></span>
                         get started
