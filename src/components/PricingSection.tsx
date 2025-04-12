@@ -128,7 +128,7 @@ const PricingSection = () => {
           </div>
 
           <div className="flex flex-col lg:flex-row rounded-lg md:rounded-2xl border border-[#333333]  bg-black mb-[64px] gap-10 order-4 lg:order-4 mt-4 justify-start lg:justify-center lg:items-center w-full  sm:w-[70%] sm:min-w-[400px] lg:w-full mx-auto lg:mx-0 relative z-10 overflow-hidden
-          bg-[url('/images/grid.svg')] p-8 h-175 lg:h-auto bg-no-repeat bg-cover bg-center">
+          bg-[url('/images/grid.svg')] p-5 md:p-8 h-175 lg:h-auto bg-no-repeat bg-cover bg-center">
             <div className="flex flex-col justify-start lg:justify-center lg:items-center gap-6 w-full lg:w-3/5">
               <h3 className={`${inter.className} text-[22px]/[22px] lg:text-[29px]/[29px] text-white text-start lg:text-center font-medium 2xl:w-2/3`}>
                 Customized Plans
@@ -151,9 +151,9 @@ const PricingSection = () => {
               </a>
             </div>
 {/* absolutely placed background images of animated coins */}
-            <div className="absolute h-full w-full bottom-0 right-0 lg:left-0 lg:top-0 lg:w-100 bg-[url('/images/defi-crypto-customized-plans.svg'),url('/images/customized-plans-background.svg')] bg-[length:350px_350px,100%_500px] lg:bg-[length:300px_300px,450px_450px] bg-[position:bottom,bottom] lg:bg-[position:left,-60px_-120px] bg-no-repeat -z-[2]"></div>
+            <div className="absolute h-full w-full bottom-0 right-0 lg:left-0 lg:top-0 lg:w-100 bg-[url('/images/defi-crypto-customized-plans.svg'),url('/images/customized-plans-background.svg')] bg-[length:250px_250px,100%_500px] lg:bg-[length:250px_250px,450px_450px] bg-[position:50%_95%,bottom] lg:bg-[position:left,-60px_-120px] bg-no-repeat -z-[2] pulse "></div>
 
-            <div className="absolute h-full w-100 top-0 right-0 lg:bg-[url('/images/defi-crypto-customized-plans-left.svg'),url('/images/customized-plans-background.svg')] lg:bg-[length:300px_300px,450px_450px] lg:bg-[position:right,20px_-120px] lg:bg-no-repeat -z-[2] hidden lg:flex"></div>
+            <div className="absolute h-full w-100 top-0 right-0 lg:bg-[url('/images/defi-crypto-customized-plans-left.svg'),url('/images/customized-plans-background.svg')] lg:bg-[length:250px_250px,450px_450px] lg:bg-[position:right,20px_-120px] lg:bg-no-repeat -z-[2] hidden lg:flex pulse"></div>
           </div>
         </div>
   )
