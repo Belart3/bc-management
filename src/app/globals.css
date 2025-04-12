@@ -15,7 +15,7 @@
     }
     @keyframes grow {
       0% {
-        opacity: 0.5;
+        opacity: 0.7;
         scale: 0.8;
       }
       50% {
@@ -23,7 +23,7 @@
         scale: 1;
       }
       100% {
-        opacity: 0.5;
+        opacity: 0.7;
         scale: 0.8;
       }
     }
@@ -46,7 +46,7 @@
     .animate-grow {
       animation: grow linear;
       animation-timeline: view();
-      animation-range: entry 0 cover 100%;
+      /* animation-range: entry 0 cover 100%; */
     }
     .animate-infinite-scroll {
       animation: infinite-scroll infinite linear ;
