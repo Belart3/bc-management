@@ -33,32 +33,32 @@ const Footer = () => {
                     Quick Links
                 </p>
                 <Link href={'/#problems'}>
-                    <li className={`text-[#666666] text-center md:text-start ${inter.className} text-[14px]/[21px] md:text-[16px/[24px]] font-normal capitalize`}>
+                    <li className={`text-[#666666] text-center md:text-start ${inter.className} text-[14px]/[21px] md:text-[16px/[24px]] font-normal capitalize transition-all ease-in-out duration-150 hover:text-[#F4844C]`}>
                         Your Problems
                     </li>
                 </Link>
                 <Link href={'/#problems'}>
-                    <li className={`text-[#666666] text-center md:text-start ${inter.className} text-[14px]/[21px] md:text-[16px/[24px]] font-normal capitalize`}>
+                    <li className={`text-[#666666] text-center md:text-start ${inter.className} text-[14px]/[21px] md:text-[16px/[24px]] font-normal capitalize transition-all ease-in-out duration-150 hover:text-[#F4844C]`}>
                         Our Solution
                     </li>
                 </Link>
                 <Link href={'/#testimonials'}>
-                    <li className={`text-[#666666] text-center md:text-start ${inter.className} text-[14px]/[21px] md:text-[16px/[24px]] font-normal capitalize`}>
+                    <li className={`text-[#666666] text-center md:text-start ${inter.className} text-[14px]/[21px] md:text-[16px/[24px]] font-normal capitalize transition-all ease-in-out duration-150 hover:text-[#F4844C]`}>
                         Testimonials
                     </li>
                 </Link>
                 <Link href={'/#pricing'}>
-                    <li className={`text-[#666666] text-center md:text-start ${inter.className} text-[14px]/[21px] md:text-[16px/[24px]] font-normal capitalize`}>
+                    <li className={`text-[#666666] text-center md:text-start ${inter.className} text-[14px]/[21px] md:text-[16px/[24px]] font-normal capitalize transition-all ease-in-out duration-150 hover:text-[#F4844C]`}>
                         Pricing Plan
                     </li>
                 </Link>
                 <Link href={'/terms-and-conditions'}>
-                    <li className={`text-[#666666] text-center md:text-start ${inter.className} text-[14px]/[21px] md:text-[16px/[24px]] font-normal capitalize`}>
+                    <li className={`text-[#666666] text-center md:text-start ${inter.className} text-[14px]/[21px] md:text-[16px/[24px]] font-normal capitalize transition-all ease-in-out duration-150 hover:text-[#F4844C]`}>
                         Terms & Conditions
                     </li>
                 </Link>
                 <Link href={'/privacy-policy'}>
-                    <li className={`text-[#666666] text-center md:text-start ${inter.className} text-[14px]/[21px] md:text-[16px/[24px]] font-normal capitalize`}>
+                    <li className={`text-[#666666] text-center md:text-start ${inter.className} text-[14px]/[21px] md:text-[16px/[24px]] font-normal capitalize transition-all ease-in-out duration-150 hover:text-[#F4844C]`}>
                         Privacy Policy
                     </li>
                 </Link>

@@ -54,10 +54,12 @@ const Popup = () => {
                             <p className={`text-[#333333] text-start ${inter.className} text-[16px]/[24px] md:text-[18px]/[27px] font-normal`}>
                                 Schedule your FREE consultation with one of our specialists today and take the first step towards achieving your goals.
                             </p>
-                            <button className='bg-[#F4844C] text-white text-[14px]/[21px] md:text-[16px]/[24px] font-medium hover:bg-[#f4844C] capitalize w-full py-4 px-6 cursor-pointer rounded-2xl relative group overflow-hidden z-20 outline-2 outline-offset-2 outline-white'>
-                                <span className='absolute h-full w-0 bg-black top-0 left-0 rounded-2xl group-hover:w-full transition-all duration-300 -z-[2]'></span>
-                                book now
-                            </button>
+                            <a href="https://app.bcmanagement.us/widget/groups/bcmcalendar" target="_blank" className='w-full'>
+                                <button className='bg-[#F4844C] text-white text-[14px]/[21px] md:text-[16px]/[24px] font-medium hover:bg-[#f4844C] capitalize w-full py-4 px-6 cursor-pointer rounded-2xl relative group overflow-hidden z-20 outline-2 outline-offset-2 outline-white'>
+                                    <span className='absolute h-full w-0 bg-black top-0 left-0 rounded-2xl group-hover:w-full transition-all duration-300 -z-[2]'></span>
+                                    book now
+                                </button>
+                            </a>
                         </div>
                     </motion.div>
                 </motion.div>

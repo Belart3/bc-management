@@ -150,7 +150,7 @@ export default function Home() {
                     <blockquote>{`"${testimony.testimony}"`}</blockquote> 
                   </h3>
                   <div className="flex flex-row gap-2 items-center">
-                    <Image src={testimony.image} height={44} width={44} alt={testimony.name + "review image"} className="rounded-full" />
+                    <div className="size-11 bg-contain bg-no-repeat bg-center" style={{backgroundImage: `url(${testimony.image})`}}></div>
                     <p className={`${inter.className} text-[18px]/[27px] font-normal text-white`}>
                       {testimony.name}
                     </p>
@@ -167,8 +167,8 @@ export default function Home() {
             {
               features.map((feature) => (
                 <div className="flex flex-col gap-6 md:gap-8 lg:gap-16 md:flex-row md:even:flex-row-reverse items-center max-w-[500px] md:max-w-none mx-auto w-full" key={feature.id}>
-                  <div className="flex items-center justify-center rounded-lg md:rounded-2xl bg-[#E6E6E666] h-60 md:h-100 w-full lg:w-3/5">
-                    <div className="h-[90%] w-[90%] bg-cover bg-center bg-no-repeat" style={{ backgroundImage: `url(${feature.image})` }} ></div>
+                  <div className="flex items-center justify-center rounded-lg md:rounded-2xl bg-[#E6E6E666] h-50 md:h-80 w-full lg:w-3/5">
+                    <div className="h-full w-full bg-contain lg:bg-cover bg-center bg-no-repeat" style={{ backgroundImage: `url(${feature.image})` }} ></div>
                   </div>
                   <div className="gap-4 flex flex-col w-full lg:w-2/5">
                     <h3 className={`${inter.className} text-[22px]/[22px] md:text-[29px]/[29px] font-medium text-start sm:text-start capitalize text-black`}>
@@ -187,7 +187,7 @@ export default function Home() {
             <div className="flex flex-col lg:flex-row lg:items-center max-w-[1360px] mx-auto  gap-16">
               <div className="flex flex-col gap-4 w-full lg:w-1/2">
                 <h2 className={`text-[44px]/[44px] ${inter.className} font-medium text-white text-start md:text-center md:text-[73px]/[73px] lg:text-start`}>
-                  Struggling with Blockchain Management?
+                  Struggling with Tracking your Crypto Transactions?
                 </h2>
                 <p className={`${inter.className} text-[16px]/[24px] font-normal text-[#CCCCCC] text-start md:text-center md:text-[24px]/[36px] lg:text-start`}>
                   Fill this form and get your free solution now!
@@ -227,7 +227,7 @@ export default function Home() {
         bg-no-repeat bg-[length:contain,auto,cover] bg-[position:bottom,top_center,center] 
         md:bg-no-repeat md:bg-[length:contain,auto,cover] md:bg-[position:bottom_center,center_-20%,center] 
         lg:bg-[length:auto,auto,cover] lg:bg-[position:85%_bottom,-70%_center,center]  2xl:bg-[position:70%_100%,80%_center,center] animate-grow">
-          <div className="flex flex-col justify-center gap-6 px-5 md:px-18 lg:px-0 lg:w-[60%] lg:ms-20 mt-20 lg:my-21 2xl:max-w-[1360px] 2xl:mx-auto ">
+          <div className="flex flex-col justify-center gap-6 px-5 md:px-18 lg:px-0 lg:w-[60%] lg:max-w-[600px] lg:ms-20 mt-20 lg:my-21 2xl:max-w-[1360px] 2xl:mx-auto ">
             <h2 className={`${inter.className} text-[44px]/[44px] md:text-[73px]/[73px] text-white text-start font-medium 2xl:w-2/3`}>
               Still Got Questions? <br />
               Book a Free 15 minutes Consultation.

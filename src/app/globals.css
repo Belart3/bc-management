@@ -1,75 +1,75 @@
 @import "tailwindcss";
 
 @layer utilities {
-    @keyframes bounceTwist {
-      0%, 100% {
-        transform: translateY(0) rotate(0);
-      }
-      50% {
-        transform: translateY(-10px) rotate(10deg);
-      }
+  @keyframes bounceTwist {
+    0%, 100% {
+      transform: translateY(0) rotate(0);
     }
-    @keyframes rotate {
-        0% { transform: rotate(0deg) scale(10) }
-        100% { transform: rotate(360deg) scale(10) }
+    50% {
+      transform: translateY(-10px) rotate(10deg);
     }
-
-    @keyframes pulse {
-        0% { transform: rotate(0deg) scale(10) }
-        100% { transform: rotate(360deg) scale(10) }
-    }
-
-    @keyframes grow {
-      0%, 100% {
-        scale: 0.8;
-        filter: blur(3px);
-      }
-      50% {
-        scale: 1;
-        filter: blur(0px);
-      }
-    }
-    @keyframes infinite-scroll {
-      from {
-        transform: translateX(0%);
-      }
-      to {
-        transform: translateX(calc(-100% - 150px));
-      }
-    }
-    .animate-rotate {
-        animation: rotate 8s linear infinite;
-      }
-  
-    .animate-bounce-twist {
-      animation: bounceTwist 1s infinite ease-in-out;
-    }
-
-    .animate-grow {
-      animation: grow linear;
-      animation-timeline: view();
-      /* animation-range: entry 0 cover 100%; */
-    }
-    .animate-infinite-scroll {
-      animation: infinite-scroll infinite linear ;
-      animation-duration: 10s;
-    }
-    .pulse {
-      animation: pulse-glow 2s infinite ease-in-out;
-    }
-    
-    @keyframes pulse-glow {
-      0%, 100% {
-        filter: brightness(0.5);
-        scale: 1;
-      }
-      50% {
-        filter: brightness(1.2);
-        scale: 1.05;
-      }
-    }
-    
   }
+  @keyframes rotate {
+      0% { transform: rotate(0deg) scale(10) }
+      100% { transform: rotate(360deg) scale(10) }
+  }
+
+  @keyframes pulse {
+      0% { transform: rotate(0deg) scale(10) }
+      100% { transform: rotate(360deg) scale(10) }
+  }
+
+  @keyframes grow {
+    0%, 100% {
+      scale: 0.8;
+      filter: blur(3px);
+    }
+    50% {
+      scale: 1;
+      filter: blur(0px);
+    }
+  }
+  @keyframes infinite-scroll {
+    from {
+      transform: translateX(0%);
+    }
+    to {
+      transform: translateX(calc(-100% - 150px));
+    }
+  }
+  .animate-rotate {
+      animation: rotate 8s linear infinite;
+    }
+
+  .animate-bounce-twist {
+    animation: bounceTwist 1s infinite ease-in-out;
+  }
+
+  .animate-grow {
+    animation: grow linear;
+    animation-timeline: view();
+    /* animation-range: entry 0 cover 100%; */
+  }
+  .animate-infinite-scroll {
+    animation: infinite-scroll infinite linear ;
+    animation-duration: 10s;
+  }
+  .pulse {
+    animation: pulse-glow 2s infinite ease-in-out;
+  }
+  
+  @keyframes pulse-glow {
+    0%, 100% {
+      filter: brightness(0.5);
+      scale: 1;
+    }
+    50% {
+      filter: brightness(1.2);
+      scale: 1.05;
+    }
+  }
+  
+}
 
 html{
   scroll-behavior: smooth;

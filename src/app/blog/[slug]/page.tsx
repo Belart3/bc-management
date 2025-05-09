@@ -5,6 +5,7 @@ import BlogListItem from '@/components/BlogListItem'
 import blogData from '@/data/blogData.json'
 import Link from 'next/link'
 import { Metadata } from 'next'
+import AccordionComponent from '@/components/AccordionComponent'
 
 
 const inter = Inter(
@@ -77,12 +78,23 @@ export default async function Page({ params }: { params: Promise<{ slug: string 
                       )
                     }
                     {
-                      section.steps && (
+                      'FAQ' in section && section.FAQ && (
+                        <div className="flex flex-col">
+                          {
+                          section.FAQ.map((item: { question: string; answer: string }, index: number) => (
+                            <AccordionComponent question={item.question} answer={item.answer} key={index} />
+                          ) )
+                          }
+                        </div>
+                      )
+                    }
+                    {
+                      'steps' in section && section.steps && (
                         <ul className="flex flex-col gap-1" key={index}>
                           {
-                            section.steps.map((item, index) => (
-                              <BlogListItem title={item.title} index={index} description={item.description} key={index} />
-                            ) )
+                          section.steps.map((item: { title: string; description: string }, index: number) => (
+                            <BlogListItem title={item.title} index={index} description={item.description} key={index} />
+                          ) )
                           }
                         </ul>
                       )
@@ -108,7 +120,7 @@ export default async function Page({ params }: { params: Promise<{ slug: string 
           </h2>
           <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
             {
-                blogData.filter((blogs) => blogs.url !== blog.url ).slice(0, 3).map((blog) => (
+                blogData.filter((blogs) => blogs.url !== blog.url ).map((blog) => (
                     <div className="border border-[#E6E6E6] bg-white rounded-lg group transition-all ease-in-out duration-300 cursor-pointer lg:hover:drop-shadow-lg" key={blog.id}>
                         <Link href={`/blog/${blog.url.toLowerCase()}`} >
                             <div className="flex flex-col">
@@ -127,7 +139,7 @@ export default async function Page({ params }: { params: Promise<{ slug: string 
                 ))
             }
           </div>
-          </div>
+        </div>
       </article>
     )
   }

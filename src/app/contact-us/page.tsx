@@ -37,7 +37,7 @@ const contact = () => {
           <Link href={'tel:+1-220-226-8720'}>
             <p className={`text-[#F4844C] text-start ${inter.className} text-[18px]/[27px] font-normal capitalize flex items-center justify-start gap-2`}>
               <span>
-                <Image src="./images/phone-orange.svg" height={24} width={24} alt='' />
+                <Image src="/images/phone-orange.svg" height={24} width={24} alt='' />
               </span>
               +1-220-226-8720
             </p>
@@ -50,7 +50,7 @@ const contact = () => {
           <Link href={'mailto:support@bcmanagement.us'}>
             <p className={`text-[#F4844C] text-start ${inter.className} text-[18px]/[27px] font-normal capitalize flex items-center justify-start gap-2`}>
               <span>
-                <Image src="./images/mail-orange.svg" height={24} width={24} alt='' />
+                <Image src="/images/mail-orange.svg" height={24} width={24} alt='' />
               </span>
               support@bcmanagement.us
             </p>

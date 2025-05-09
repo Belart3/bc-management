@@ -50,7 +50,7 @@ export default async function ProductPage({params}: { params: Promise<{ slug: st
                                 </div>
                             </div>
                             <div className='flex flex-col md:flex-row md:items-center gap-2 items-start'>
-                                <Image src={wallet.qrCode} height={160} width={160} alt="scan qr code" />
+                                <div className="size-40 bg-contain bg-center bg-no-repeat" style={{backgroundImage: `url(${wallet.qrCode})`}}></div>
                                 <div className="flex flex-row gap-2 items-start">
                                     <Image src='/images/information-circle.svg' height={24} width={24} alt='more info' /> 
                                     <p className={`${inter.className} text-[#999999] text-[14px]/[21px] md:text-[16px]/[24px] font-normal text-start`}>
