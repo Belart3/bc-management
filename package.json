@@ -22,6 +22,7 @@
     "next-seo": "^6.6.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
+    "react-fast-marquee": "^1.6.5",
     "sitemap": "^8.0.0",
     "swiper": "^11.2.5"
   },

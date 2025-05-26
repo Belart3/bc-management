@@ -45,7 +45,7 @@ const Popup = () => {
                         <button className='absolute top-5 right-5 cursor-pointer' onClick={handleClose}>
                             <Image src="/images/close.svg" height={20} width={20} alt="Close" className='size-5' />
                         </button>
-                        <div className="h-50 w-full md:w-2/5 md:h-full bg-center bg-cover bg-no-repeat bg-[url('/images/bcm-popup.jpg')]"></div>
+                        <div className="h-50 w-full md:w-2/5 md:h-full bg-center bg-cover bg-no-repeat bg-[url('/images/bcm-popup.webp')]"></div>
                         <div className=" w-full md:w-3/5 flex flex-col items-start justify-center gap-4 md:gap-6 p-5 md:p-10">
                             <Image src="/logo.svg" height={30} width={60} alt="BCM Logo" className='mb-4' />
                             <h2 className={`text-black text-start ${inter.className} text-[32px]/[32px] md:text-[53px]/[53px] font-medium capitalize`}>

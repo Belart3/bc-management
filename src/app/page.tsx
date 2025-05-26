@@ -136,7 +136,7 @@ export default function Home() {
             </AnimatePresence>
           </div>
         </SectionWrapper>
-        <div className="py-11 px-5 md:px-10 md:py-12 lg:py-19 lg:px-[115px] bg-[url(/images/testimonial-bg-mobile.svg)] md:bg-[url(/images/testimonial-bg-tablet.svg)] lg:bg-[url(/images/testimonial-bg-desktop.svg)] bg-cover bg-no-repeat bg-center rounded-lg md:rounded-2xl mb-[104px] md:mb-[168px] animate-grow" id="testimonials">
+        <div className="py-11 px-5 md:px-10 md:py-12 lg:py-19 lg:px-[115px] bg-[url(/images/testimonial-bg-mobile.webp)] md:bg-[url(/images/testimonial-bg-tablet.webp)] lg:bg-[url(/images/testimonial-bg-desktop.webp)] bg-cover bg-no-repeat bg-center rounded-lg md:rounded-2xl mb-[104px] md:mb-[168px] animate-grow" id="testimonials">
           <div className="flex flex-col gap-12 md:gap-16 items-start md:items-center max-w-[1360px] mx-auto">
             <h2 className={`${inter.className} text-[32px]/[32px] md:text-[53px]/[53px] font-medium text-start md:text-center text-white`}>
               Accurate taxes. <br className="md:hidden" />
@@ -183,7 +183,7 @@ export default function Home() {
             }
           </div>
         </SectionWrapper>
-        <div className=" py-12 px-4 md:py-18 md:px-19 bg-[url(/images/form-bg-mobile.svg)] md:bg-[url(/images/form-bg-tablet.svg)] lg:bg-[url(/images/form-bg-desktop.svg)] rounded-lg md:rounded-2xl bg-center bg-cover bg-no-repeat mb-[104px] md:mb-[168px] animate-grow">
+        <div className=" py-12 px-4 md:py-18 md:px-19 bg-[url(/images/form-bg-mobile.webp)] md:bg-[url(/images/form-bg-tablet.webp)] lg:bg-[url(/images/form-bg-desktop.webp)] rounded-lg md:rounded-2xl bg-center bg-cover bg-no-repeat mb-[104px] md:mb-[168px] animate-grow">
             <div className="flex flex-col lg:flex-row lg:items-center max-w-[1360px] mx-auto  gap-16">
               <div className="flex flex-col gap-4 w-full lg:w-1/2">
                 <h2 className={`text-[44px]/[44px] ${inter.className} font-medium text-white text-start md:text-center md:text-[73px]/[73px] lg:text-start`}>
@@ -222,11 +222,11 @@ export default function Home() {
             <PricingSection />
         </SectionWrapper>
         <div className="flex flex-col lg:flex-row rounded-lg md:rounded-2xl border border-[#333333]  bg-black mb-[64px] gap-10
-        bg-[url('/images/consultation.svg'),_url('/orange-tint.svg'),_url('/images/grid.svg')] 
+        bg-[url('/images/consultation.png'),_url('/orange-tint.svg'),_url('/images/grid.svg')] 
         h-200 md:h-300 lg:h-150 
         bg-no-repeat bg-[length:contain,auto,cover] bg-[position:bottom,top_center,center] 
         md:bg-no-repeat md:bg-[length:contain,auto,cover] md:bg-[position:bottom_center,center_-20%,center] 
-        lg:bg-[length:auto,auto,cover] lg:bg-[position:85%_bottom,-70%_center,center]  2xl:bg-[position:70%_100%,80%_center,center] animate-grow">
+        lg:bg-[length:contain,auto,cover] lg:bg-[position:85%_bottom,-70%_center,center]  2xl:bg-[position:70%_100%,80%_center,center] animate-grow">
           <div className="flex flex-col justify-center gap-6 px-5 md:px-18 lg:px-0 lg:w-[60%] lg:max-w-[600px] lg:ms-20 mt-20 lg:my-21 2xl:max-w-[1360px] 2xl:mx-auto ">
             <h2 className={`${inter.className} text-[44px]/[44px] md:text-[73px]/[73px] text-white text-start font-medium 2xl:w-2/3`}>
               Still Got Questions? <br />

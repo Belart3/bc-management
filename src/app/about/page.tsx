@@ -27,7 +27,7 @@ const about = () => {
                         At BlockChain Management, we specialize in cryptocurrency taxation, focusing on the unique needs of meme coin traders. Our expert team navigates the complexities of crypto transactions and regulations to provide tailored tax solutions. Trust us to help you manage your crypto tax obligations with confidence.
                     </p>
                 </div>
-                <div className="bg-cover bg-no-repeat bg-top bg-[url('/images/about-BCM.png')] h-70 md:h-100 w-full"></div>
+                <div className="bg-cover bg-no-repeat bg-top bg-[url('/images/about-BCM.webp')] h-70 md:h-100 w-full"></div>
             </div>
 
             <div className="flex flex-col gap-10 md:gap-16">

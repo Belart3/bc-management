@@ -2,16 +2,16 @@
     {
         "name": "Cade O’Neil",
         "position": "CEO",
-        "image": "/images/Cade-O’Neil.png"
+        "image": "/images/Cade-O’Neil.webp"
     },
     {
         "name": "Zach Humphries",
         "position": "CMO",
-        "image": "/images/Zach-Humphries.jpg"
+        "image": "/images/Zach-Humphries.webp"
     },
     {
         "name": "Joshua Tsegba",
         "position": "CTO",
-        "image": "/images/Joshua-Tsegba.png"
+        "image": "/images/Joshua-Tsegba.webp"
     }
 ]
