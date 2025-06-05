@@ -190,7 +190,7 @@ export default function Home() {
                   Struggling with Tracking your Crypto Transactions?
                 </h2>
                 <p className={`${inter.className} text-[16px]/[24px] font-normal text-[#CCCCCC] text-start md:text-center md:text-[24px]/[36px] lg:text-start`}>
-                  Fill this form and get your free solution now!
+                  Fill this form and get our free eBook today!
                 </p>
               </div>
               <div className="h-100 p-2 bg-[#333333] rounded-lg lg:w-1/2">
