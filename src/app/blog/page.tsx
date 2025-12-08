@@ -20,7 +20,7 @@ const Blog = () => {
     const truncateText = ( text: string, textLimit: number ) => {
         const words = text.split('');
         if (words.length > textLimit) {
-          return words.slice(0, textLimit).join('') + "...";
+            return words.slice(0, textLimit).join('') + "...";
         }
         return text;
     }
